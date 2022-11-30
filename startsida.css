@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--orange: #ff862f;
+	--grey-h2: #616161;
+	--white: #ffffff;
+}
+
 .header-cont {
 	position: fixed;
 	top: 0;
@@ -14,7 +20,6 @@
 
 .main-cont {
 	background-image: url("/bilder/asia-culturecenter-COWf-5ZtZ6w-unsplash.jpg");
-	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
@@ -25,10 +30,25 @@
 .header-cont,
 ul {
 	display: flex;
-	padding-top: 1em;
-	color: #ffffff;
+	color: var(--white);
+	align-self: center;
+	justify-content: space-evenly;
 }
 
+ul {
+	width: 50%;
+}
+
+.header-cont>p {
+	font-size: 2em;
+	margin-left: 1em;
+	align-self: center;
+}
+
+span {
+	color: var(--orange);
+	font-weight: bold;
+}
 
 div {
 	flex-grow: 1;
@@ -41,24 +61,13 @@ li {
 	text-transform: uppercase;
 	transition-duration: 0.25s;
 	font-size: 0.8em;
-	color: white;
+	color: var(--white);
 }
 
 li:hover {
 	cursor: pointer;
-	color: #ff862f;
+	color: var(--orange);
 	transition-duration: 0.25s;
-}
-
-li:nth-child(2),
-li:nth-child(3),
-li:nth-child(4),
-li:nth-child(5) {
-	padding-left: 4em;
-}
-
-li:nth-child(5) {
-	margin-right: 3em;
 }
 
 /* Main content */
@@ -69,7 +78,7 @@ li:nth-child(5) {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	color: white;
+	color: var(--white);
 }
 
 .main-cont p {
@@ -82,20 +91,20 @@ li:nth-child(5) {
 }
 
 button {
-	background-color: #ff862f;
+	background-color: var(--orange);
 	padding: 0.5em 2em;
 	border: none;
 	transition: 0.5s;
 	margin-top: 2em;
 	font-weight: bold;
 	border-radius: 3px;
-	color: white;
+	color: var(--white);
 }
 
 button:hover {
 	cursor: pointer;
-	background-color: white;
-	color: #ff862f;
+	background-color: var(--white);
+	color: var(--orange);
 	transition: 0.5s;
 }
 
@@ -106,11 +115,11 @@ button:hover {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 5;
 	background-color: #e0e0e0;
-	color: white;
+	color: var(--white);
 }
 
 .speaker-cont img {
-	width: 30em;
+	max-width: 30em;
 	height: 100%;
 }
 
@@ -134,7 +143,7 @@ button:hover {
 	margin-bottom: 2.5em;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	color: #616161;
+	color: var(--grey-h2);
 	margin-top: 4em;
 }
 
@@ -147,8 +156,8 @@ button:hover {
 .speaker-cont div:nth-of-type(3) {
 	grid-column: 2;
 	grid-row: 2;
-	background-color: #ff862f;
-	width: 30em;
+	background-color: var(--orange);
+	max-width: 30em;
 	text-align: center;
 }
 
@@ -160,8 +169,8 @@ button:hover {
 .speaker-cont div:nth-of-type(5) {
 	grid-column: 1;
 	grid-row: 3;
-	background-color: #ff862f;
-	width: 30em;
+	background-color: var(--orange);
+	max-width: 30em;
 	text-align: center;
 	justify-self: end;
 }
@@ -175,8 +184,8 @@ button:hover {
 .speaker-cont div:nth-of-type(7) {
 	grid-column: 2;
 	grid-row: 4;
-	background-color: #ff862f;
-	width: 30em;
+	background-color: var(--orange);
+	max-width: 30em;
 	text-align: center;
 }
 
@@ -188,84 +197,64 @@ button:hover {
 .speaker-cont div:nth-of-type(9) {
 	grid-column: 1;
 	grid-row: 5;
-	background-color: #ff862f;
-	width: 30em;
+	background-color: var(--orange);
+	max-width: 30em;
 	text-align: center;
 	justify-self: end;
 }
 
 /* Tickets */
 
-.tickets-cont {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 4;
+.tickets {
 	text-align: center;
-}
-
-.tickets-cont div:nth-of-type(1) {
-	grid-column: 1 / span 4;
-	grid-row: 1;
-	margin-top: 5em;
-	margin-bottom: 3em;
+	color: var(--grey-h2);
+	font-size: 2.25em;
 	text-transform: uppercase;
-	font-size: 1.5em;
-	color: #616161;
+	margin-top: 2em;
 }
 
-.tickets-cont div:nth-of-type(2) {
-	grid-column: 1;
-	grid-row: 2;
+.cont__tickets {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 3em;
 }
 
-.tickets-cont div:nth-of-type(3) {
-	grid-column: 2;
-	grid-row: 2;
-}
 
-.tickets-cont div:nth-of-type(4) {
-	grid-column: 3;
-	grid-row: 2;
-}
 
-.price {
-	padding: 0.6em 1em;
-	background-color: white;
-	color: #ff862f;
-	box-shadow: 1px 1px 3px rgb(81, 81, 81);
-	margin-left: 3em;
-	margin-right: 3em;
-	font-size: 23px;
+.cont__price {
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 0.6em 0.2em;
+	background-color: var(--white);
+	color: var(--orange);
 	border-radius: 2px;
 	font-weight: bold;
 	transition: 0.5s;
+	box-shadow: 1px 1px 3px rgb(81, 81, 81);
+	width: 8em;
 }
 
-.price:hover {
-	background-color: #ff862f;
-	color: white;
-	transition: 0.5s;
+.cont__price:hover {
+	background-color: var(--orange);
+	color: var(--white);
 }
 
-.day {
-	color: #616161;
-	text-transform: uppercase;
+.cont__day {
+	color: var(--grey-h2);
 	font-weight: bold;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-transform: uppercase;
 }
 
-.tickets-cont p:nth-of-type(3) {
-	width: 18em;
+.cont__info {
+	max-width: 15em;
 }
 
-.tickets-cont button:hover {
-	background-color: rgb(255, 255, 255);
-	color: #ff862f;
+.cont__button:hover {
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
-
-/* Circular, Arial, sans-serif */
 
 /* Contact us */
 
@@ -274,8 +263,8 @@ button:hover {
 	margin-bottom: 1.5em;
 	text-transform: uppercase;
 	font-size: 2.25em;
-	color: #616161;
-	margin-top: 4em;
+	color: var(--grey-h2);
+	margin-top: 2em;
 }
 
 .contact-cont form {
@@ -341,13 +330,13 @@ input {
 	padding: 0.3em;
 	width: 11.9em;
 	margin-bottom: 1em;
-	outline-color: #ff862f;
+	outline-color: var(--orange);
 }
 
 
 textarea {
 	padding: 0.3em;
-	outline-color: #ff862f;
+	outline-color: var(--orange);
 }
 
 /* Footer */
@@ -355,17 +344,19 @@ textarea {
 .footer-cont {
 	background-color: #292929;
 	height: 10em;
-	color: white;
+	color: var(--white);
 	display: flex;
-	justify-content: space-between;
 	margin-top: 5em;
 }
 
-.adress {
+.footer__info {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.about {
+.cont__about {
 	width: 15em;
 	display: flex;
 	flex-direction: column;
@@ -373,11 +364,11 @@ textarea {
 
 }
 
-.about h4 {
+.cont__about h4 {
 	text-align: center;
 	margin-bottom: 1em;
 }
 
-.about p {
-	color: #8c8c8c;
+.cont__about p {
+	color: #9e9e9e;
 }
