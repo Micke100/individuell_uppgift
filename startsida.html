@@ -11,18 +11,22 @@
 
 <body>
 
+	<!-- Header -->
 	<header>
 		<nav class="header-cont">
 			<p>Bättre webb</p>
 			<div></div>
 			<ul>
-				<li><a href="startsida.html">Hem</a></li>
-				<li><a href="talare.html">Talare</a></li>
-				<li><a href="tickets.html">Biljetter</a></li>
-				<li><a href="seminarium.html">Seminarium</a></li>
+				<li>Hem</li>
+				<li>Talare</li>
+				<li>Biljetter</li>
+				<li>Seminarium</li>
+				<li>Kontakt</li>
 			</ul>
 		</nav>
 	</header>
+
+	<!-- Huvud Content -->
 	<main>
 		<section class="main-cont">
 			<h1>Frontend Utvecklar Seminarium</h1>
@@ -34,6 +38,7 @@
 			<button>Köp Biljetter</button>
 		</section>
 
+		<!-- Speaker content -->
 		<section class="speaker-cont">
 			<div>
 				<h2>Talare</h2>
@@ -76,37 +81,67 @@
 			</div>
 		</section>
 
+		<!-- Biljetter -->
 		<section class="tickets-cont">
 			<div>
-				<h2>Tickets</h2>
+				<h2>Biljetter</h2>
 			</div>
 			<div>
 				<p class="price">100:-</p>
 				<p class="day">Fredag</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident!</p>
+				<p>Biljett till Fredagens seminarium, vill du beställa mat väljer du det i formuläret vid biljett köp.
+				</p>
 				<button>Köp Biljett</button>
 			</div>
 			<div>
 				<p class="price">100:-</p>
 				<p class="day">Lördag</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident!</p>
+				<p>Biljett till Lördagens seminarium, vill du beställa mat väljer du det i formuläret vid biljett köp.
+				</p>
 				<button>Köp Biljett</button>
 			</div>
 			<div>
 				<p class="price">100:-</p>
 				<p class="day">Söndag</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident!</p>
+				<p>Biljett till Söndagens seminarium, vill du beställa mat väljer du det i formuläret vid biljett köp.
+				</p>
 				<button>Köp Biljett</button>
 			</div>
 			<div>
 				<p class="price">250:-</p>
 				<p class="day">Alla dagar</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident!</p>
+				<p>Biljett till seminarium för alla dagar, vill du beställa mat väljer du det i formuläret vid biljett
+					köp.</p>
 				<button>Köp Biljett</button>
 			</div>
-
 		</section>
 
+		<!-- Kontakta oss -->
+		<section class="contact-cont">
+			<form action="">
+				<h2>Kontakt</h2>
+				<div>
+					<label for="name">Ditt namn</label>
+					<input id="name" type="text" placeholder="Ditt namn" required>
+				</div>
+				<div>
+					<label for="email">Din email</label>
+					<input id="email" type="email" placeholder="Din email" required>
+				</div>
+				<div>
+					<label for="subject">Ämne</label>
+					<input id="subject" type="text" placeholder="Ämne" required>
+				</div>
+				<div>
+					<label for="message">Meddelande</label>
+					<textarea name="message" id="message" cols="40" rows="10" placeholder="Meddelande"
+						required></textarea>
+				</div>
+				<button>Skicka meddelande</button>
+			</form>
+		</section>
+
+		<!-- Footer content -->
 		<footer class="footer-cont">
 			<div class="adress">
 				<img src="" alt="">

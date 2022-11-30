@@ -4,17 +4,19 @@
 	box-sizing: border-box;
 }
 
-.main-cont,
 .header-cont {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.489);
+	width: 100%;
+	height: 15vh;
+}
+
+.main-cont {
 	background-image: url("/bilder/asia-culturecenter-COWf-5ZtZ6w-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-}
-
-a {
-	text-decoration: none;
-
 }
 
 
@@ -32,7 +34,7 @@ div {
 	flex-grow: 1;
 }
 
-li>a {
+li {
 	text-decoration: none;
 	list-style-type: none;
 	font-weight: bold;
@@ -42,7 +44,7 @@ li>a {
 	color: white;
 }
 
-li>a:hover {
+li:hover {
 	cursor: pointer;
 	color: #ff862f;
 	transition-duration: 0.25s;
@@ -50,11 +52,12 @@ li>a:hover {
 
 li:nth-child(2),
 li:nth-child(3),
-li:nth-child(4) {
-	padding-left: 6em;
+li:nth-child(4),
+li:nth-child(5) {
+	padding-left: 4em;
 }
 
-li:nth-child(4) {
+li:nth-child(5) {
 	margin-right: 3em;
 }
 
@@ -109,18 +112,12 @@ button:hover {
 .speaker-cont img {
 	width: 30em;
 	height: 100%;
-	transition: 0.25s;
 }
 
-.speaker-cont img:hover {
-	scale: calc(1.05);
-	transition: 0.25s;
-}
 
 .speaker-cont h3 {
 	margin-top: 2em;
 	font-size: 1.5em;
-
 }
 
 .speaker-cont p:nth-child(2) {
@@ -258,14 +255,102 @@ button:hover {
 	margin-bottom: 1em;
 }
 
+.tickets-cont p:nth-of-type(3) {
+	width: 18em;
+}
+
 .tickets-cont button:hover {
 	background-color: rgb(255, 255, 255);
 	color: #ff862f;
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
 
+/* Circular, Arial, sans-serif */
 
-/* Footer 1 */
+/* Contact us */
+
+.contact-cont h2 {
+	text-align: center;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+	font-size: 2.25em;
+	color: #616161;
+	margin-top: 4em;
+}
+
+.contact-cont form {
+	display: grid;
+	grid-template-columns: 2;
+	grid-template-rows: 5;
+}
+
+.contact-cont form h2 {
+	grid-column: 1 / span 2;
+	grid-row: 1;
+}
+
+.contact-cont form div:nth-of-type(1) {
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: end;
+	margin-right: 0.2em;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-cont form div:nth-of-type(2) {
+	grid-column: 2;
+	grid-row: 2;
+	justify-self: start;
+	margin-left: 0.2em;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-cont form div:nth-of-type(3) {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#subject {
+	width: 24em;
+}
+
+.contact-cont form div:nth-of-type(4) {
+	grid-column: 1 / span 2;
+	grid-row: 4;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-cont form button {
+	grid-column: 1 / span 2;
+	grid-row: 5;
+	justify-self: center;
+}
+
+.contact-cont form button:hover {
+	box-shadow: 1px 1px 3px rgb(81, 81, 81);
+}
+
+input {
+	padding: 0.3em;
+	width: 11.9em;
+	margin-bottom: 1em;
+	outline-color: #ff862f;
+}
+
+
+textarea {
+	padding: 0.3em;
+	outline-color: #ff862f;
+}
+
+/* Footer */
 
 .footer-cont {
 	background-color: #292929;
