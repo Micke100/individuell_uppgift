@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<title>OnWebb</title>
+</head>
+
+
+<body>
+	<header class="header__cont">
+		<h1 class="header__cont__h1"><span class="cont__h1--orange">O</span>n<span class="cont__h1--orange">W</span>ebb
+		</h1>
+	</header>
+
+	<!-- Main-cont-form -->
+	<main class="main__cont">
+
+
+		<form action="#" class="form__cont">
+
+			<h2 class="cont__h2 day__h2">Välj dag</h2>
+			<p>Priset för enskild dag är 400 kr eller 1000 kr för alla dagar.</p>
+			<section class="cont__day">
+				<fieldset class="cont__day__input">
+					<input class="cont__input" id="friday" type="checkbox">
+					<label class="cont__label" for="friday">Fredag 9/12 09:00-16:00</label>
+				</fieldset>
+
+				<fieldset class="cont__day__input">
+					<input class="cont__input" id="saturday" type="checkbox">
+					<label class="cont__label" for="saturday">Lördag 10/12 09:00-16:00</label>
+				</fieldset>
+
+				<fieldset class="cont__day__input">
+					<input class="cont__input" id="sunday" type="checkbox">
+					<label class="cont__label" for="sunday">Söndag 11/12 09:00-16:00</label>
+				</fieldset>
+
+				<fieldset class="cont__day__input">
+					<input class="cont__input" id="all-days" type="checkbox">
+					<label class="cont__label" for="all-days">Boka alla dagar 09:00-16:00</label>
+				</fieldset>
+			</section>
+
+			<h2 class="cont__h2">Konktakt uppgifter</h2>
+			<section class="cont__contact">
+				<fieldset class="cont__name">
+					<label class="cont__label" for="firstname">Ditt Förnamn*</label>
+					<input class="cont__input" id="firstname" type="text" placeholder="Förnamn" required>
+				</fieldset>
+				<fieldset class="cont__name">
+					<label class="cont__label" for="lastname">Ditt Efternamn*</label>
+					<input class="cont__input" id="lastname" type="text" placeholder="Efternamn" required>
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="cont__label" for="epost">Din E-postadress*</label>
+					<input class="cont__input" id="epost" type="email" placeholder="E-postadress" required>
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="cont__label" for="number">Mobilnummer*</label>
+					<input class="cont__input" id="number" type="text" min="8" max="12" placeholder="xxx-xx xx xxx"
+						required>
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="cont__label" for="adress">Din Adress*</label>
+					<input class="cont__input" id="adress" type="text" placeholder="Adress" required>
+				</fieldset>
+			</section>
+
+			<section class="cont__contact">
+				<fieldset class="cont__name">
+					<label class="cont__label" for="zipcode">Ditt Postnummer*</label>
+					<input class="cont__input" id="zipcode" type="text" placeholder="Postnummer" required>
+				</fieldset>
+				<fieldset class="cont__name">
+					<label class="cont__label" for="ort">Ange Ort*</label>
+					<input class="cont__input" id="ort" type="text" placeholder="Ort" required>
+				</fieldset>
+			</section>
+
+
+			<h2 class="cont__h2">Beställ mat</h2>
+			<section class="food__cont">
+				<fieldset>
+					<input class="cont__input" id="food" type="checkbox">
+					<label class="cont__label" for="food">Vill ej beställa mat</label>
+				</fieldset>
+
+				<fieldset>
+					<input class="cont__input" name="valj_mat" id="fish" type="radio">
+					<label class="cont__label" for="fish">Fisk</label>
+				</fieldset>
+
+
+				<fieldset>
+					<input class="cont__input" name="valj_mat" id="meat" type="radio">
+					<label class="cont__label" for="meat">Kött</label>
+				</fieldset>
+
+				<fieldset>
+					<input class="cont__input" name="valj_mat" id="veg" type="radio">
+					<label class="cont__label" for="veg">Vegetariskt</label>
+				</fieldset>
+
+				<label class="cont__label cont__textarea" for="">Har du allergier eller andra önskemål?</label>
+				<textarea name="" id="" cols="30" rows="10" placeholder="Meddelande"></textarea>
+
+			</section>
+			<button class="form__button">Betala</button>
+		</form>
+
+	</main>
+
+	<!-- Footer content -->
+	<footer class="cont__footer">
+		<section class="footer__info">
+			<img class="footer__icon" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+			<p>Tage Erlandergatan, Karlstad CCC</p>
+			<p>Karlstad, Sverige</p>
+		</section>
+
+		<section class="footer__info">
+			<img class="footer__icon" src="/bilder/ph_phone-call-fill.png" alt="phone">
+			<p>+46 70 36 83 573</p>
+		</section>
+
+		<section class="footer__info">
+			<img class="footer__icon" src="/bilder/clarity_email-line.png" alt="email">
+			<p>onwebb@outlook.com</p>
+		</section>
+
+		<section class="footer__follow">
+			<p>Follow Us</p>
+			<div class="footer__cont__icon">
+				<img class="footer__icon" src="/bilder/gg_facebook.png" alt="facebook">
+				<img class="footer__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+
+				<img class="footer__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+				<img class="footer__icon" src="/bilder/ps_youtube.png" alt="youtube">
+
+			</div>
+		</section>
+
+
+	</footer>
+</body>
+
+</html>

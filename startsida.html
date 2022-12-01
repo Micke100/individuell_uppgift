@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="startsida.css">
-	<title>Bättre webb</title>
+	<title>OnWebb</title>
 </head>
 
 <body>
@@ -35,7 +35,9 @@
 				vi
 				utlovar ett mycket trevligt sällskap, hoppas vi ses!
 			</p>
-			<button>Köp Biljetter</button>
+			<a href="form.html">
+				<button>Köp Biljetter</button>
+			</a>
 		</section>
 
 		<!-- Speaker content -->
@@ -94,7 +96,11 @@
 					vid
 					biljett köp.
 				</p>
-				<button class="cont__button">Köp Biljett</button>
+				<div class="cont__pay__button">
+					<a href="form.html">
+						<button class="cont__button">Köp Biljett</button>
+					</a>
+				</div>
 			</div>
 
 			<div class="cont__card">
@@ -103,7 +109,11 @@
 				<p class="cont__info">Biljett till Lördagens seminarium, vill du beställa mat väljer du det i formuläret
 					vid biljett köp.
 				</p>
-				<button class="cont__button">Köp Biljett</button>
+				<div class="cont__pay__button">
+					<a href="form.html">
+						<button class="cont__button">Köp Biljett</button>
+					</a>
+				</div>
 			</div>
 
 			<div class="cont__card">
@@ -112,7 +122,11 @@
 				<p class="cont__info">Biljett till Söndagens seminarium, vill du beställa mat väljer du det i formuläret
 					vid biljett köp.
 				</p>
-				<button class="cont__button">Köp Biljett</button>
+				<div class="cont__pay__button">
+					<a href="form.html">
+						<button class="cont__button">Köp Biljett</button>
+					</a>
+				</div>
 			</div>
 
 			<div class="cont__card">
@@ -121,7 +135,11 @@
 				<p class="cont__info">Biljett till seminarium för alla dagar, vill du beställa mat väljer du det i
 					formuläret vid biljett
 					köp.</p>
-				<button class="cont__button">Köp Biljett</button>
+				<div class="cont__pay__button">
+					<a href="form.html">
+						<button class="cont__button">Köp Biljett</button>
+					</a>
+				</div>
 			</div>
 
 		</section>
@@ -152,29 +170,32 @@
 		</section>
 
 		<!-- Footer content -->
-		<footer class="footer-cont">
-			<div class="footer__info">
-				<img src="" alt="">
+		<footer class="cont__footer">
+			<section class="footer__info">
+				<img class="footer__icon" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
 				<p>Tage Erlandergatan, Karlstad CCC</p>
 				<p>Karlstad, Sverige</p>
-			</div>
+			</section>
 
-			<div class="footer__info">
-				<img src="" alt="">
+			<section class="footer__info">
+				<img class="footer__icon" src="/bilder/ph_phone-call-fill.png" alt="phone">
 				<p>+46 70 36 83 573</p>
-			</div>
+			</section>
 
-			<div class="footer__info">
-				<img src="" alt="">
+			<section class="footer__info">
+				<img class="footer__icon" src="/bilder/clarity_email-line.png" alt="email">
 				<p>onwebb@outlook.com</p>
-			</div>
+			</section>
 
-			<div class="cont__about">
-				<h4>Om företaget</h4>
-				<p>Vi på OnWebb håller i olika former av seminarium inom IT och tech i hela landet. Vi har ett
-					brett utbud av utbildare och föreläsare med över 100 års erfarenhet sammanlagt inom områden som
-					backend, frontend, UX/UI design, systemutveckling med mera.</p>
-			</div>
+			<section class="footer__follow">
+				<p>Follow Us</p>
+				<div class="footer__cont__icon">
+					<img class="footer__icon" src="/bilder/gg_facebook.png" alt="facebook">
+					<img class="footer__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					<img class="footer__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					<img class="footer__icon" src="/bilder/ps_youtube.png" alt="youtube">
+				</div>
+			</section>
 
 
 		</footer>

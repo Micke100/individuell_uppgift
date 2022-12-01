@@ -24,7 +24,6 @@
 	background-attachment: fixed;
 }
 
-
 /* Header */
 
 .header-cont,
@@ -113,7 +112,6 @@ button:hover {
 .speaker-cont {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 5;
 	background-color: #e0e0e0;
 	color: var(--white);
 }
@@ -122,7 +120,6 @@ button:hover {
 	max-width: 30em;
 	height: 100%;
 }
-
 
 .speaker-cont h3 {
 	margin-top: 2em;
@@ -216,11 +213,18 @@ button:hover {
 .cont__tickets {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	margin-top: 3em;
+	justify-content: space-around;
+	padding: 0 1rem;
 }
 
+.cont__card {
+	display: flex;
+	flex-direction: column;
+	max-width: 20rem;
+	margin: 1rem;
 
+}
 
 .cont__price {
 	font-size: 1.5rem;
@@ -232,12 +236,6 @@ button:hover {
 	font-weight: bold;
 	transition: 0.5s;
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
-	width: 8em;
-}
-
-.cont__price:hover {
-	background-color: var(--orange);
-	color: var(--white);
 }
 
 .cont__day {
@@ -308,6 +306,11 @@ button:hover {
 	width: 24em;
 }
 
+.cont__pay__button {
+	display: flex;
+	justify-content: center;
+}
+
 .contact-cont form div:nth-of-type(4) {
 	grid-column: 1 / span 2;
 	grid-row: 4;
@@ -333,7 +336,6 @@ input {
 	outline-color: var(--orange);
 }
 
-
 textarea {
 	padding: 0.3em;
 	outline-color: var(--orange);
@@ -341,34 +343,43 @@ textarea {
 
 /* Footer */
 
-.footer-cont {
+.cont__footer {
 	background-color: #292929;
-	height: 10em;
+	height: fit-content;
 	color: var(--white);
 	display: flex;
 	margin-top: 5em;
+	padding: 1em;
 }
 
-.footer__info {
+.footer__info,
+.footer__follow {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
-.cont__about {
-	width: 15em;
-	display: flex;
+.footer__follow {
 	flex-direction: column;
-	padding: 1em;
-
+	justify-content: flex-start;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
-.cont__about h4 {
-	text-align: center;
-	margin-bottom: 1em;
+.footer__cont__icon {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.cont__about p {
-	color: #9e9e9e;
+.footer__icon {
+	border: 2px solid var(--orange);
+	padding: 0.2em;
+	margin: 0.2em;
+	margin-top: 1em;
+}
+
+.footer__icon:hover {
+	cursor: pointer;
 }
