@@ -10,6 +10,11 @@
 	--white: #ffffff;
 }
 
+a {
+	text-decoration: none;
+}
+
+/* Start på Header */
 .header-cont {
 	position: fixed;
 	top: 0;
@@ -18,13 +23,11 @@
 	height: 15vh;
 }
 
-.main-cont {
+.main__cont {
 	background-image: url("/bilder/asia-culturecenter-COWf-5ZtZ6w-unsplash.jpg");
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
-
-/* Header */
 
 .header-cont,
 ul {
@@ -69,9 +72,11 @@ li:hover {
 	transition-duration: 0.25s;
 }
 
+/* Slut på Header */
+
 /* Main content */
 
-.main-cont {
+.main__cont {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -80,12 +85,12 @@ li:hover {
 	color: var(--white);
 }
 
-.main-cont p {
+.main__cont p {
 	margin-top: 1em;
-	width: 40em;
+	max-width: 40em;
 }
 
-.main-cont h1 {
+.main__cont h1 {
 	font-size: 3em;
 }
 
@@ -131,7 +136,6 @@ button:hover {
 	margin-bottom: 1em;
 	font-size: 0.7em;
 	font-weight: bold;
-
 }
 
 .speaker-cont div:nth-of-type(1) {
@@ -350,6 +354,12 @@ textarea {
 	display: flex;
 	margin-top: 5em;
 	padding: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer__pin {
+	margin-top: 1em;
 }
 
 .footer__info,
@@ -358,7 +368,7 @@ textarea {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	width: 100%;
+	padding: 0 2rem;
 }
 
 .footer__follow {
@@ -382,4 +392,45 @@ textarea {
 
 .footer__icon:hover {
 	cursor: pointer;
+}
+
+/* Responsivitet för Footern */
+@media (max-width: 980px) {
+	.footer__follow {
+		margin-left: 3.5em;
+	}
+}
+
+@media (max-width: 722px) {
+	.footer__info {
+		padding-left: 0.1em;
+	}
+}
+
+@media (max-width: 631px) {
+	.footer__email {
+		margin-left: 5em;
+		padding-right: 0;
+	}
+
+	.footer__follow {
+		align-self: center;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 530px) and (min-width: 320px) {
+	.footer__email {
+		margin-left: unset;
+		margin-right: 2em;
+	}
+
+	.footer__follow {
+		margin-right: 0.5em;
+	}
+
+	.footer__follow p {
+		margin-top: 1em;
+
+	}
 }

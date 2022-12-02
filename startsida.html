@@ -17,19 +17,29 @@
 			<p><span>O</span>n<span>W</span>ebb</p>
 			<div></div>
 			<ul>
-				<li tabindex="1">Hem</li>
-				<li tabindex="3">Speakers</li>
-				<li tabindex="4">Biljetter</li>
-				<li tabindex="5">Seminarium</li>
-				<li tabindex="6">Kontakt</li>
+				<a href="#top">
+					<li tabindex="1">Hem</li>
+				</a>
+				<a href="#speakers">
+					<li tabindex="3">Speakers</li>
+				</a>
+				<a href="#biljetter">
+					<li tabindex="4">Biljetter</li>
+				</a>
+				<a href="seminarium.html">
+					<li tabindex="5">Seminarium</li>
+				</a>
+				<a href="#contact">
+					<li tabindex="6">Kontakt</li>
+				</a>
 			</ul>
 		</nav>
 	</header>
 
 	<!-- Huvud Content -->
 	<main>
-		<section class="main-cont">
-			<h1>Bättre Webb</h1>
+		<section class="main__cont">
+			<h1 id="#">Bättre Webb</h1>
 			<p>OnWebb håller nu i ett seminarium mellan fredag 9/12 och söndag 11/2. Föreläsningarna hålls på
 				Karlstad CCC med våra expeter inom respektive område. Möjlighet till att beställa mat kommer finnas och
 				vi
@@ -43,7 +53,7 @@
 		<!-- Speaker content -->
 		<section class="speaker-cont">
 			<div>
-				<h2>Speakers</h2>
+				<h2 id="speakers">Speakers</h2>
 			</div>
 			<div>
 				<img src="/bilder/pexels-pavel-danilyuk-8761515.jpg" alt="speaker1">
@@ -87,7 +97,7 @@
 		</section>
 
 		<!-- Biljetter -->
-		<h2 class="tickets">Biljetter</h2>
+		<h2 id="biljetter" class="tickets">Biljetter</h2>
 		<section class="cont__tickets">
 			<div class="cont__card">
 				<p class="cont__price">399 kr</p>
@@ -147,7 +157,7 @@
 		<!-- Kontakta oss -->
 		<section class="contact-cont">
 			<form action="#">
-				<h2>Kontakt</h2>
+				<h2 id="contact">Kontakt</h2>
 				<div>
 					<label for="name">Ditt namn</label>
 					<input id="name" type="text" placeholder="Namn" required>
@@ -171,7 +181,7 @@
 
 		<!-- Footer content -->
 		<footer class="cont__footer">
-			<section class="footer__info">
+			<section class="footer__info  footer__pin">
 				<img class="footer__icon" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
 				<p>Tage Erlandergatan, Karlstad CCC</p>
 				<p>Karlstad, Sverige</p>
@@ -182,7 +192,7 @@
 				<p>+46 70 36 83 573</p>
 			</section>
 
-			<section class="footer__info">
+			<section class="footer__info footer__email">
 				<img class="footer__icon" src="/bilder/clarity_email-line.png" alt="email">
 				<p>onwebb@outlook.com</p>
 			</section>
@@ -192,8 +202,10 @@
 				<div class="footer__cont__icon">
 					<img class="footer__icon" src="/bilder/gg_facebook.png" alt="facebook">
 					<img class="footer__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+
 					<img class="footer__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
 					<img class="footer__icon" src="/bilder/ps_youtube.png" alt="youtube">
+
 				</div>
 			</section>
 
