@@ -9,10 +9,10 @@
 	<title>OnWebb</title>
 </head>
 
-
 <body>
+	<!-- Start på Header -->
 	<header class="header__cont">
-		<h1 class="header__cont__h1"><span class="cont__h1--orange">O</span>n<span class="cont__h1--orange">W</span>ebb
+		<h1 class="header__h1"><span class="header__h1--orange">O</span>n<span class="header__h1--orange">W</span>ebb
 		</h1>
 		<ul class="header__menu">
 			<a href="/startsida.html">
@@ -22,147 +22,147 @@
 				<li>Seminarium</li>
 			</a>
 	</header>
+	<!-- Slut på Header -->
 
-	<!-- Main-cont-form -->
+	<!-- Start på Main -->
 	<main class="main__cont">
-
-
 		<form action="#" class="form__cont">
 
-			<h2 class="cont__h2 day__h2">Välj dag</h2>
+			<!-- Start på "välj dag formulär" -->
+			<h2 class="cont__h2">Välj dag</h2>
 			<p>Priset för enskild dag är 400 kr eller 1000 kr för alla dagar.</p>
 			<hr />
-			<section class="cont__day">
-				<fieldset class="cont__day__input">
-					<input class="cont__input" id="friday" type="checkbox">
-					<label class="cont__label" for="friday">Fredag 9/12 09:00-16:00</label>
+			<section class="days__cont">
+				<fieldset class="days__cont__input">
+					<input class="form__input" id="friday" type="checkbox">
+					<label class="form__label" for="friday">Fredag 9/12 10:00-15:00</label>
 				</fieldset>
 
-				<fieldset class="cont__day__input">
-					<input class="cont__input" id="saturday" type="checkbox">
-					<label class="cont__label" for="saturday">Lördag 10/12 09:00-16:00</label>
+				<fieldset class="days__cont__input">
+					<input class="form__input" id="saturday" type="checkbox">
+					<label class="form__label" for="saturday">Lördag 10/12 10:00-15:00</label>
 				</fieldset>
 
-				<fieldset class="cont__day__input">
-					<input class="cont__input" id="sunday" type="checkbox">
-					<label class="cont__label" for="sunday">Söndag 11/12 09:00-16:00</label>
+				<fieldset class="days__cont__input">
+					<input class="form__input" id="sunday" type="checkbox">
+					<label class="form__label" for="sunday">Söndag 11/12 10:00-15:00</label>
 				</fieldset>
 
-				<fieldset class="cont__day__input">
-					<input class="cont__input" id="all-days" type="checkbox">
-					<label class="cont__label" for="all-days">Boka alla dagar 09:00-16:00</label>
+				<fieldset class="days__cont__input">
+					<input class="form__input" id="all-days" type="checkbox">
+					<label class="form__label" for="all-days">Boka alla dagar 10:00-15:00</label>
 				</fieldset>
 			</section>
+			<!-- Slut på "välj dag formulär" -->
 
+			<!-- Start på kontakt formulär -->
 			<h2 class="cont__h2">Konktakt uppgifter</h2>
 			<hr />
-			<section class="cont__contact">
+			<section class="contact__cont">
 				<fieldset class="cont__name">
-					<label class="cont__label" for="firstname">Ditt Förnamn*</label>
-					<input class="cont__input" id="firstname" type="text" placeholder="Förnamn" required>
+					<label class="form__label" for="firstname">Ditt Förnamn*</label>
+					<input class="form__input" id="firstname" type="text" placeholder="Förnamn" required>
 				</fieldset>
 				<fieldset class="cont__name">
-					<label class="cont__label" for="lastname">Ditt Efternamn*</label>
-					<input class="cont__input" id="lastname" type="text" placeholder="Efternamn" required>
-				</fieldset>
-			</section>
-			<section>
-				<fieldset class="cont__name">
-					<label class="cont__label" for="epost">Din E-postadress*</label>
-					<input class="cont__input" id="epost" type="email" placeholder="E-postadress" required>
+					<label class="form__label" for="lastname">Ditt Efternamn*</label>
+					<input class="form__input" id="lastname" type="text" placeholder="Efternamn" required>
 				</fieldset>
 			</section>
 			<section>
 				<fieldset class="cont__name">
-					<label class="cont__label" for="number">Mobilnummer*</label>
-					<input class="cont__input" id="number" type="text" min="8" max="12" placeholder="xxx-xx xx xxx"
+					<label class="form__label" for="epost">Din E-postadress*</label>
+					<input class="form__input" id="epost" type="email" placeholder="E-postadress" required>
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="form__label" for="number">Mobilnummer*</label>
+					<input class="form__input" id="number" type="text" min="8" max="12" placeholder="xxx-xx xx xxx"
 						required>
 				</fieldset>
 			</section>
 			<section>
 				<fieldset class="cont__name">
-					<label class="cont__label" for="adress">Din Adress*</label>
-					<input class="cont__input" id="adress" type="text" placeholder="Adress" required>
+					<label class="form__label" for="adress">Din Adress*</label>
+					<input class="form__input" id="adress" type="text" placeholder="Adress" required>
 				</fieldset>
 			</section>
 
 			<section class="cont__contact">
 				<fieldset class="cont__name">
-					<label class="cont__label" for="zipcode">Ditt Postnummer*</label>
-					<input class="cont__input" id="zipcode" type="text" placeholder="Postnummer" required>
+					<label class="form__label" for="zipcode">Ditt Postnummer*</label>
+					<input class="form__input" id="zipcode" type="text" placeholder="Postnummer" required>
 				</fieldset>
 				<fieldset class="cont__name">
-					<label class="cont__label" for="ort">Ange Ort*</label>
-					<input class="cont__input" id="ort" type="text" placeholder="Ort" required>
+					<label class="form__label" for="ort">Ange Ort*</label>
+					<input class="form__input" id="ort" type="text" placeholder="Ort" required>
 				</fieldset>
 			</section>
+			<!-- Slut på kontakt formulär -->
 
-
+			<!-- Start på "beställ mat formulär" -->
 			<h2 class="cont__h2">Beställ mat</h2>
 			<hr />
 			<section class="food__cont">
 				<fieldset>
-					<input class="cont__input" id="food" type="checkbox">
-					<label class="cont__label" for="food">Vill ej beställa mat</label>
+					<input class="form__input" id="food" type="checkbox">
+					<label class="form__label" for="food">Vill ej beställa mat</label>
 				</fieldset>
 
 				<fieldset>
-					<input class="cont__input" name="valj_mat" id="fish" type="radio">
-					<label class="cont__label" for="fish">Fisk</label>
-				</fieldset>
-
-
-				<fieldset>
-					<input class="cont__input" name="valj_mat" id="meat" type="radio">
-					<label class="cont__label" for="meat">Kött</label>
+					<input class="form__input" name="valj_mat" id="fish" type="radio">
+					<label class="form__label" for="fish">Fisk</label>
 				</fieldset>
 
 				<fieldset>
-					<input class="cont__input" name="valj_mat" id="veg" type="radio">
-					<label class="cont__label" for="veg">Vegetariskt</label>
+					<input class="form__input" name="valj_mat" id="meat" type="radio">
+					<label class="form__label" for="meat">Kött</label>
 				</fieldset>
 
-				<label class="cont__label cont__textarea" for="">Har du allergier eller andra önskemål?</label>
-				<textarea name="" id="" cols="30" rows="10" placeholder="Meddelande"></textarea>
+				<fieldset>
+					<input class="form__input" name="valj_mat" id="veg" type="radio">
+					<label class="form__label" for="veg">Vegetariskt</label>
+				</fieldset>
 
+				<label class="form__label form__textarea" for="message">Har du allergier eller andra önskemål?</label>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Meddelande"></textarea>
 			</section>
-			<button class="form__button">Betala</button>
+			<!-- Slut på "beställ mat formulär" -->
+
+			<button class="button__pay">Betala</button>
 		</form>
 
 	</main>
 
-	<!-- Footer content -->
-	<footer class="cont__footer">
+	<!-- Start på Footer -->
+	<footer class="footer__cont">
 		<section class="footer__info  footer__pin">
-			<img class=" footer__icon" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+			<img class="footer__icons" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
 			<p>Tage Erlandergatan, Karlstad CCC</p>
 			<p>Karlstad, Sverige</p>
 		</section>
 
 		<section class="footer__info">
-			<img class="footer__icon" src="/bilder/ph_phone-call-fill.png" alt="phone">
+			<img class="footer__icons" src="/bilder/ph_phone-call-fill.png" alt="phone">
 			<p>+46 70 36 83 573</p>
 		</section>
 
 		<section class="footer__info footer__email">
-			<img class="footer__icon" src="/bilder/clarity_email-line.png" alt="email">
+			<img class="footer__icons" src="/bilder/clarity_email-line.png" alt="email">
 			<p>onwebb@outlook.com</p>
 		</section>
 
 		<section class="footer__follow">
 			<p>Follow Us</p>
-			<div class="footer__cont__icon">
-				<img class="footer__icon" src="/bilder/gg_facebook.png" alt="facebook">
-				<img class="footer__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
-
-				<img class="footer__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
-				<img class="footer__icon" src="/bilder/ps_youtube.png" alt="youtube">
-
+			<div class="footer__socials">
+				<img class="footer__icons" src="/bilder/gg_facebook.png" alt="facebook">
+				<img class="footer__icons" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+				<img class="footer__icons" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+				<img class="footer__icons" src="/bilder/ps_youtube.png" alt="youtube">
 			</div>
 		</section>
-
-
 	</footer>
+	<!-- Slut på Footer -->
 </body>
 
 </html>

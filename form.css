@@ -22,6 +22,11 @@ hr {
 	margin-top: 2em;
 }
 
+fieldset {
+	border: none;
+	text-align: start;
+}
+
 .header__cont {
 	background-image: url("/bilder/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg");
 	background-size: 100% 100%;
@@ -63,7 +68,7 @@ li:hover {
 	transition-duration: 0.25s;
 }
 
-.header__cont__h1 {
+.header__h1 {
 	margin-top: 0.8em;
 	color: var(--white);
 	font-size: 4em;
@@ -71,7 +76,7 @@ li:hover {
 	width: 100%;
 }
 
-.cont__h1--orange {
+.header__h1--orange {
 	color: var(--orange);
 }
 
@@ -86,42 +91,36 @@ li:hover {
 	margin-top: 2em;
 }
 
-.day__h2 {
-	margin-bottom: 0;
+.form__cont {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-/* Välj dag formulär */
-
+/* Start på "välj dag formulär" */
 .form__cont p {
 	color: var(--grey-h2);
 	margin-bottom: 1em;
 }
 
-.cont__day {
+.days__cont {
 	display: flex;
 	flex-direction: column;
 }
 
-.cont__day__input {
+.days__cont__input {
 	margin: 0.5em;
 }
 
+/* Slut på "välj dag formulär" */
 
-.contact-cont h2 {
+/* Start på kontakt formulär*/
+.cont__h2 {
 	text-align: center;
-	margin-bottom: 1.5em;
 	text-transform: uppercase;
 	font-size: 2.25em;
 	color: var(--grey-h2);
 	margin-top: 2em;
-}
-
-/* Form */
-
-.form__cont {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .form__cont section {
@@ -129,7 +128,7 @@ li:hover {
 	margin-top: 2em;
 }
 
-.form__cont section .cont__name {
+.cont__name {
 	display: flex;
 	flex-direction: column;
 	margin-top: 1em;
@@ -138,19 +137,7 @@ li:hover {
 #epost,
 #number,
 #adress {
-	margin: 0;
 	width: 28.7em;
-}
-
-
-.cont__textarea {
-	margin-top: 1em;
-}
-
-.cont__input,
-textarea {
-	outline-color: var(--orange);
-	padding: 0.7em;
 }
 
 #firstname,
@@ -158,7 +145,37 @@ textarea {
 	margin-right: 1em;
 }
 
-.form__button {
+/* Start på välj mat formulär */
+.food__cont {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.form__textarea {
+	margin-top: 1em;
+}
+
+.form__input,
+#message {
+	outline-color: var(--orange);
+	padding: 0.7em;
+}
+
+.form__label {
+	font-weight: bold;
+}
+
+#meat,
+#veg,
+#fish {
+	margin-top: 1em;
+}
+
+/* Slut på välj mat formulär */
+
+/* Start på betalknapp */
+.button__pay {
 	background-color: var(--orange);
 	padding: 1em 7em;
 	border: none;
@@ -169,7 +186,7 @@ textarea {
 	color: var(--white);
 }
 
-.form__button:hover {
+.button__pay:hover {
 	cursor: pointer;
 	background-color: var(--white);
 	color: var(--orange);
@@ -177,30 +194,10 @@ textarea {
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
 
-.food__cont {
-	display: flex;
-	flex-direction: column;
-	padding: 1em;
-}
+/* Slut på betalknapp */
 
-fieldset {
-	border: none;
-	text-align: start;
-}
-
-.cont__label {
-	font-weight: bold;
-}
-
-#meat,
-#veg,
-#fish {
-	margin-top: 1em;
-}
-
-/* Footer */
-
-.cont__footer {
+/* Start på Footer */
+.footer__cont {
 	background-color: #292929;
 	height: fit-content;
 	color: var(--white);
@@ -222,7 +219,6 @@ fieldset {
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 0 2rem;
-
 }
 
 .footer__follow {
@@ -232,23 +228,25 @@ fieldset {
 	font-size: 1.5em;
 }
 
-.footer__cont__icon {
+.footer__socials {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.footer__icon {
+.footer__icons {
 	border: 2px solid var(--orange);
 	padding: 0.2em;
 	margin: 0.2em;
 	margin-top: 1em;
 }
 
-.footer__icon:hover {
+.footer__icons:hover {
 	cursor: pointer;
 }
 
-/* Responsivitet för Formuläret */
+/* Slut på Footer */
+
+/* Start på Media-queries */
 @media (max-width: 440px) {
 	.cont__contact {
 		display: flex;
@@ -271,7 +269,6 @@ fieldset {
 	}
 }
 
-/* Responsivitet för Footern */
 @media (max-width: 980px) {
 	.footer__follow {
 		margin-left: 3.5em;
@@ -315,3 +312,5 @@ fieldset {
 
 	}
 }
+
+/* Slut på Media-queries */
