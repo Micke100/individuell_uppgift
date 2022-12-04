@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--orange: #ff862f;
 	--grey-h2: #616161;
@@ -15,7 +19,7 @@ a {
 }
 
 /* Start på Header */
-.header-cont {
+.header__cont {
 	position: fixed;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.489);
@@ -23,40 +27,28 @@ a {
 	height: 15vh;
 }
 
-.main__cont {
-	background-image: url("/bilder/asia-culturecenter-COWf-5ZtZ6w-unsplash.jpg");
-	background-size: 100% 100%;
-	background-attachment: fixed;
-}
-
-.header-cont,
-ul {
+.header__menu {
 	display: flex;
 	color: var(--white);
-	align-self: center;
-	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
 }
 
-ul {
-	width: 50%;
-}
-
-.header-cont>p {
-	font-size: 2em;
+.header__menu>li:first-of-type {
+	font-size: 3em;
 	margin-left: 1em;
-	align-self: center;
+	list-style-type: none;
 }
 
-span {
+.header__title--orange {
 	color: var(--orange);
-	font-weight: bold;
 }
 
 div {
 	flex-grow: 1;
 }
 
-li {
+.menu__item {
 	text-decoration: none;
 	list-style-type: none;
 	font-weight: bold;
@@ -64,9 +56,10 @@ li {
 	transition-duration: 0.25s;
 	font-size: 0.8em;
 	color: var(--white);
+	padding: 0 1em;
 }
 
-li:hover {
+.menu__item:hover {
 	cursor: pointer;
 	color: var(--orange);
 	transition-duration: 0.25s;
@@ -74,7 +67,12 @@ li:hover {
 
 /* Slut på Header */
 
-/* Main content */
+/* Start på Main content */
+.main__cont {
+	background-image: url("/bilder/asia-culturecenter-COWf-5ZtZ6w-unsplash.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
 
 .main__cont {
 	display: flex;
@@ -88,13 +86,14 @@ li:hover {
 .main__cont p {
 	margin-top: 1em;
 	max-width: 40em;
+	margin: 0 1em;
 }
 
-.main__cont h1 {
+.main__h1--bigger {
 	font-size: 3em;
 }
 
-button {
+.main__button {
 	background-color: var(--orange);
 	padding: 0.5em 2em;
 	border: none;
@@ -105,40 +104,39 @@ button {
 	color: var(--white);
 }
 
-button:hover {
+.main__button:hover {
 	cursor: pointer;
 	background-color: var(--white);
 	color: var(--orange);
 	transition: 0.5s;
 }
 
-/* Speakers */
-
-.speaker-cont {
+/* Start på Speakers sektion */
+.speakers__cont {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	background-color: #e0e0e0;
 	color: var(--white);
 }
 
-.speaker-cont img {
+.speakers__cont img {
 	max-width: 30em;
 	height: 100%;
 }
 
-.speaker-cont h3 {
+.speakers__cont h3 {
 	margin-top: 2em;
 	font-size: 1.5em;
 }
 
-.speaker-cont p:nth-child(2) {
+.speakers__cont p:nth-child(2) {
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 	font-size: 0.7em;
 	font-weight: bold;
 }
 
-.speaker-cont div:nth-of-type(1) {
+.speakers__cont div:nth-of-type(1) {
 	grid-column: 1 / span 2;
 	text-align: center;
 	margin-bottom: 2.5em;
@@ -148,13 +146,13 @@ button:hover {
 	margin-top: 4em;
 }
 
-.speaker-cont div:nth-of-type(2) {
+.speakers__cont div:nth-of-type(2) {
 	grid-column: 1;
 	grid-row: 2;
 	text-align: end;
 }
 
-.speaker-cont div:nth-of-type(3) {
+.speakers__cont div:nth-of-type(3) {
 	grid-column: 2;
 	grid-row: 2;
 	background-color: var(--orange);
@@ -162,12 +160,12 @@ button:hover {
 	text-align: center;
 }
 
-.speaker-cont div:nth-of-type(4) {
+.speakers__cont div:nth-of-type(4) {
 	grid-column: 2;
 	grid-row: 3;
 }
 
-.speaker-cont div:nth-of-type(5) {
+.speakers__cont div:nth-of-type(5) {
 	grid-column: 1;
 	grid-row: 3;
 	background-color: var(--orange);
@@ -176,13 +174,13 @@ button:hover {
 	justify-self: end;
 }
 
-.speaker-cont div:nth-of-type(6) {
+.speakers__cont div:nth-of-type(6) {
 	grid-column: 1;
 	grid-row: 4;
 	text-align: end;
 }
 
-.speaker-cont div:nth-of-type(7) {
+.speakers__cont div:nth-of-type(7) {
 	grid-column: 2;
 	grid-row: 4;
 	background-color: var(--orange);
@@ -190,12 +188,12 @@ button:hover {
 	text-align: center;
 }
 
-.speaker-cont div:nth-of-type(8) {
+.speakers__cont div:nth-of-type(8) {
 	grid-column: 2;
 	grid-row: 5;
 }
 
-.speaker-cont div:nth-of-type(9) {
+.speakers__cont div:nth-of-type(9) {
 	grid-column: 1;
 	grid-row: 5;
 	background-color: var(--orange);
@@ -204,8 +202,9 @@ button:hover {
 	justify-self: end;
 }
 
-/* Tickets */
+/* Slut på Speakers sektion */
 
+/* Start på Biljett sektion */
 .tickets {
 	text-align: center;
 	color: var(--grey-h2);
@@ -214,7 +213,7 @@ button:hover {
 	margin-top: 2em;
 }
 
-.cont__tickets {
+.tickets__cont {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 3em;
@@ -222,7 +221,7 @@ button:hover {
 	padding: 0 1rem;
 }
 
-.cont__card {
+.card__cont {
 	display: flex;
 	flex-direction: column;
 	max-width: 20rem;
@@ -230,7 +229,7 @@ button:hover {
 
 }
 
-.cont__price {
+.card__price {
 	font-size: 1.5rem;
 	text-align: center;
 	padding: 0.6em 0.2em;
@@ -242,25 +241,42 @@ button:hover {
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
 
-.cont__day {
+.card__day {
 	color: var(--grey-h2);
 	font-weight: bold;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	text-transform: uppercase;
+	align-self: center;
 }
 
-.cont__info {
+.card__info {
 	max-width: 15em;
 }
 
-.cont__button:hover {
-	box-shadow: 1px 1px 3px rgb(81, 81, 81);
+.card__button {
+	background-color: var(--orange);
+	padding: 0.5em 2em;
+	border: none;
+	transition: 0.5s;
+	margin-top: 2em;
+	font-weight: bold;
+	border-radius: 3px;
+	color: var(--white);
 }
 
-/* Contact us */
+.card__button:hover {
+	box-shadow: 1px 1px 3px rgb(81, 81, 81);
+	transition: 0.5s;
+	background-color: var(--white);
+	color: var(--orange);
+	cursor: pointer;
+}
 
-.contact-cont h2 {
+/* Slut på Biljett sektion */
+
+/* Start på Kontakta oss sektion */
+.cont__contact h2 {
 	text-align: center;
 	margin-bottom: 1.5em;
 	text-transform: uppercase;
@@ -269,18 +285,18 @@ button:hover {
 	margin-top: 2em;
 }
 
-.contact-cont form {
+.form__cont {
 	display: grid;
 	grid-template-columns: 2;
 	grid-template-rows: 5;
 }
 
-.contact-cont form h2 {
+.form__cont h2 {
 	grid-column: 1 / span 2;
 	grid-row: 1;
 }
 
-.contact-cont form div:nth-of-type(1) {
+.form__cont div:nth-of-type(1) {
 	grid-column: 1;
 	grid-row: 2;
 	justify-self: end;
@@ -289,7 +305,7 @@ button:hover {
 	flex-direction: column;
 }
 
-.contact-cont form div:nth-of-type(2) {
+.form__cont div:nth-of-type(2) {
 	grid-column: 2;
 	grid-row: 2;
 	justify-self: start;
@@ -298,7 +314,7 @@ button:hover {
 	flex-direction: column;
 }
 
-.contact-cont form div:nth-of-type(3) {
+.form__cont div:nth-of-type(3) {
 	grid-column: 1 / span 2;
 	grid-row: 3;
 	justify-self: center;
@@ -315,7 +331,7 @@ button:hover {
 	justify-content: center;
 }
 
-.contact-cont form div:nth-of-type(4) {
+.form__cont div:nth-of-type(4) {
 	grid-column: 1 / span 2;
 	grid-row: 4;
 	justify-self: center;
@@ -323,17 +339,7 @@ button:hover {
 	flex-direction: column;
 }
 
-.contact-cont form button {
-	grid-column: 1 / span 2;
-	grid-row: 5;
-	justify-self: center;
-}
-
-.contact-cont form button:hover {
-	box-shadow: 1px 1px 3px rgb(81, 81, 81);
-}
-
-input {
+.form__input {
 	padding: 0.3em;
 	width: 11.9em;
 	margin-bottom: 1em;
@@ -345,9 +351,32 @@ textarea {
 	outline-color: var(--orange);
 }
 
-/* Footer */
+.form__button {
+	grid-column: 1 / span 2;
+	grid-row: 5;
+	justify-self: center;
+	background-color: var(--orange);
+	padding: 1em 7em;
+	border: none;
+	transition: 0.5s;
+	margin-top: 2em;
+	font-weight: bold;
+	border-radius: 3px;
+	color: var(--white);
+}
 
-.cont__footer {
+.form__button:hover {
+	cursor: pointer;
+	background-color: var(--white);
+	color: var(--orange);
+	transition: 0.5s;
+	box-shadow: 1px 1px 3px rgb(81, 81, 81);
+}
+
+/* Slut på kontakta oss sektion */
+
+/* Start på Footer */
+.footer__cont {
 	background-color: #292929;
 	height: fit-content;
 	color: var(--white);
@@ -359,7 +388,7 @@ textarea {
 }
 
 .footer__pin {
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 
 .footer__info,
@@ -378,23 +407,25 @@ textarea {
 	font-size: 1.5em;
 }
 
-.footer__cont__icon {
+.footer__socials {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.footer__icon {
+.footer__icons {
 	border: 2px solid var(--orange);
 	padding: 0.2em;
 	margin: 0.2em;
 	margin-top: 1em;
 }
 
-.footer__icon:hover {
+.footer__icons:hover {
 	cursor: pointer;
 }
 
-/* Responsivitet för Footern */
+/* Slut på Footer */
+
+/* Start på Media-queries */
 @media (max-width: 980px) {
 	.footer__follow {
 		margin-left: 3.5em;

@@ -10,48 +10,47 @@
 </head>
 
 <body>
-
 	<!-- Header -->
 	<header>
-		<nav class="header-cont">
-			<p><span>O</span>n<span>W</span>ebb</p>
-			<div></div>
-			<ul>
+		<nav class="header__cont">
+			<ul class="header__menu">
+				<li><span class="header__title--orange">O</span>n<span class="header__title--orange">W</span>ebb</li>
+				<div></div>
 				<a href="#top">
-					<li tabindex="1">Hem</li>
+					<li class="menu__item" tabindex="1">Hem</li>
 				</a>
 				<a href="#speakers">
-					<li tabindex="3">Speakers</li>
+					<li class="menu__item" tabindex="3">Speakers</li>
 				</a>
 				<a href="#biljetter">
-					<li tabindex="4">Biljetter</li>
+					<li class="menu__item" tabindex="4">Biljetter</li>
 				</a>
 				<a href="seminarium.html">
-					<li tabindex="5">Seminarium</li>
+					<li class="menu__item" tabindex="5">Seminarium</li>
 				</a>
 				<a href="#contact">
-					<li tabindex="6">Kontakt</li>
+					<li class="menu__item" tabindex="6">Kontakt</li>
 				</a>
 			</ul>
 		</nav>
 	</header>
 
-	<!-- Huvud Content -->
+	<!-- Start på Main content -->
 	<main>
 		<section class="main__cont">
-			<h1 id="#">Bättre Webb</h1>
+			<h1 class="main__h1--bigger" id="#">Bättre Webb</h1>
 			<p>OnWebb håller nu i ett seminarium mellan fredag 9/12 och söndag 11/2. Föreläsningarna hålls på
 				Karlstad CCC med våra expeter inom respektive område. Möjlighet till att beställa mat kommer finnas och
 				vi
 				utlovar ett mycket trevligt sällskap, hoppas vi ses!
 			</p>
 			<a href="form.html">
-				<button>Köp Biljetter</button>
+				<button class="main__button">Köp Biljetter</button>
 			</a>
 		</section>
 
 		<!-- Speaker content -->
-		<section class="speaker-cont">
+		<section class="speakers__cont">
 			<div>
 				<h2 id="speakers">Speakers</h2>
 			</div>
@@ -98,121 +97,117 @@
 
 		<!-- Biljetter -->
 		<h2 id="biljetter" class="tickets">Biljetter</h2>
-		<section class="cont__tickets">
-			<div class="cont__card">
-				<p class="cont__price">399 kr</p>
-				<p class="cont__day">Fredag 9/12</p>
-				<p class="cont__info">Biljett till Fredagens seminarium, vill du beställa mat väljer du det i formuläret
+		<section class="tickets__cont">
+			<div class="card__cont">
+				<p class="card__price">400 kr</p>
+				<p class="card__day">Fredag 9/12</p>
+				<p class="card__info">Biljett till Fredagens seminarium, vill du beställa mat väljer du det i formuläret
 					vid
 					biljett köp.
 				</p>
 				<div class="cont__pay__button">
 					<a href="form.html">
-						<button class="cont__button">Köp Biljett</button>
+						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
 			</div>
 
-			<div class="cont__card">
-				<p class="cont__price">399 kr</p>
-				<p class="cont__day">Lördag 10/12</p>
-				<p class="cont__info">Biljett till Lördagens seminarium, vill du beställa mat väljer du det i formuläret
+			<div class="card__cont">
+				<p class="card__price">400 kr</p>
+				<p class="card__day">Lördag 10/12</p>
+				<p class="card__info">Biljett till Lördagens seminarium, vill du beställa mat väljer du det i formuläret
 					vid biljett köp.
 				</p>
 				<div class="cont__pay__button">
 					<a href="form.html">
-						<button class="cont__button">Köp Biljett</button>
+						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
 			</div>
 
-			<div class="cont__card">
-				<p class="cont__price">399 kr</p>
-				<p class="cont__day">Söndag 11/12</p>
-				<p class="cont__info">Biljett till Söndagens seminarium, vill du beställa mat väljer du det i formuläret
+			<div class="card__cont">
+				<p class="card__price">400 kr</p>
+				<p class="card__day">Söndag 11/12</p>
+				<p class="card__info">Biljett till Söndagens seminarium, vill du beställa mat väljer du det i formuläret
 					vid biljett köp.
 				</p>
 				<div class="cont__pay__button">
 					<a href="form.html">
-						<button class="cont__button">Köp Biljett</button>
+						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
 			</div>
 
-			<div class="cont__card">
-				<p class="cont__price">999 kr</p>
-				<p class="cont__day">Alla dagar</p>
-				<p class="cont__info">Biljett till seminarium för alla dagar, vill du beställa mat väljer du det i
+			<div class="card__cont">
+				<p class="card__price">1000 kr</p>
+				<p class="card__day">Alla dagar</p>
+				<p class="card__info">Biljett till seminarium för alla dagar, vill du beställa mat väljer du det i
 					formuläret vid biljett
 					köp.</p>
 				<div class="cont__pay__button">
 					<a href="form.html">
-						<button class="cont__button">Köp Biljett</button>
+						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
 			</div>
 
 		</section>
 
-		<!-- Kontakta oss -->
-		<section class="contact-cont">
-			<form action="#">
+		<!-- Start på kontakta oss formulär -->
+		<section class="cont__contact">
+			<form class="form__cont" action="#">
 				<h2 id="contact">Kontakt</h2>
 				<div>
 					<label for="name">Ditt namn</label>
-					<input id="name" type="text" placeholder="Namn" required>
+					<input class="form__input" id="name" type="text" placeholder="Namn" required>
 				</div>
 				<div>
 					<label for="email">Din email</label>
-					<input id="email" type="email" placeholder="Email" required>
+					<input class="form__input" id="email" type="email" placeholder="Email" required>
 				</div>
 				<div>
 					<label class="for" for="subject">Ämne</label>
-					<input id="subject" type="text" placeholder="Ämne" required>
+					<input class="form__input" id="subject" type="text" placeholder="Ämne" required>
 				</div>
 				<div>
 					<label for="message">Meddelande</label>
 					<textarea name="message" id="message" cols="40" rows="10" placeholder="Meddelande"
 						required></textarea>
 				</div>
-				<button type="button">Skicka meddelande</button>
+				<button class="form__button" type="button">Skicka meddelande</button>
 			</form>
 		</section>
+		<!-- Slut på Kontakta oss formulär -->
 
-		<!-- Footer content -->
-		<footer class="cont__footer">
+		<!-- Start på Footer -->
+		<footer class="footer__cont">
 			<section class="footer__info  footer__pin">
-				<img class="footer__icon" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+				<img class="footer__icons" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
 				<p>Tage Erlandergatan, Karlstad CCC</p>
 				<p>Karlstad, Sverige</p>
 			</section>
 
 			<section class="footer__info">
-				<img class="footer__icon" src="/bilder/ph_phone-call-fill.png" alt="phone">
+				<img class="footer__icons" src="/bilder/ph_phone-call-fill.png" alt="phone">
 				<p>+46 70 36 83 573</p>
 			</section>
 
 			<section class="footer__info footer__email">
-				<img class="footer__icon" src="/bilder/clarity_email-line.png" alt="email">
+				<img class="footer__icons" src="/bilder/clarity_email-line.png" alt="email">
 				<p>onwebb@outlook.com</p>
 			</section>
 
 			<section class="footer__follow">
-				<p>Follow Us</p>
-				<div class="footer__cont__icon">
-					<img class="footer__icon" src="/bilder/gg_facebook.png" alt="facebook">
-					<img class="footer__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
-
-					<img class="footer__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
-					<img class="footer__icon" src="/bilder/ps_youtube.png" alt="youtube">
-
+				<p>Följ Oss</p>
+				<div class="footer__socials">
+					<img class="footer__icons" src="/bilder/gg_facebook.png" alt="facebook">
+					<img class="footer__icons" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					<img class="footer__icons" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					<img class="footer__icons" src="/bilder/ps_youtube.png" alt="youtube">
 				</div>
 			</section>
-
-
 		</footer>
-
-
+		<!-- Slut på Footer -->
 	</main>
 
 </body>
