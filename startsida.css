@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
 }
 
 html {
@@ -38,6 +39,7 @@ a {
 	font-size: 3em;
 	margin-left: 1em;
 	list-style-type: none;
+	font-weight: bold;
 }
 
 .header__title--orange {
@@ -224,7 +226,7 @@ div {
 .card__cont {
 	display: flex;
 	flex-direction: column;
-	max-width: 20rem;
+	max-width: 12rem;
 	margin: 1rem;
 
 }
