@@ -1,22 +1,5 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Playfair Display', serif;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	height: 100vh;
-}
-
-:root {
-	--orange: #ff862f;
-	--grey-h2: #616161;
-	--white: #ffffff;
 }
 
 /* Start på Header */
@@ -34,7 +17,6 @@ body {
 .header__menu {
 	width: 100%;
 	display: flex;
-	padding: 1em;
 	justify-content: center;
 	align-items: flex-end;
 	margin-bottom: 1em;
@@ -50,27 +32,6 @@ body {
 
 .header__h1--orange {
 	color: var(--orange);
-}
-
-a {
-	text-decoration: none;
-}
-
-li {
-	text-decoration: none;
-	list-style-type: none;
-	font-weight: bold;
-	text-transform: uppercase;
-	transition-duration: 0.25s;
-	font-size: 1em;
-	color: var(--white);
-	margin-right: 1em;
-}
-
-li:hover {
-	cursor: pointer;
-	color: var(--orange);
-	transition-duration: 0.25s;
 }
 
 /* Slut på Header */
@@ -136,7 +97,7 @@ hr {
 .card__text {
 	max-width: 100%;
 	padding: 1em;
-	min-height: 14em;
+	min-height: 20em;
 }
 
 .button__cont {
@@ -166,102 +127,3 @@ hr {
 }
 
 /* Slut på Main */
-
-/* Start på Footer */
-.footer__cont {
-	background-color: #292929;
-	height: fit-content;
-	color: var(--white);
-	display: flex;
-	margin-top: 5em;
-	padding: 1em;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.footer__pin {
-	margin-top: 0.5em;
-}
-
-.footer__info,
-.footer__follow {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	padding: 0 2rem;
-}
-
-.footer__follow {
-	flex-direction: column;
-	justify-content: flex-start;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-.footer__socials {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.footer__icons {
-	border: 2px solid var(--orange);
-	padding: 0.2em;
-	margin: 0.2em;
-	margin-top: 1em;
-}
-
-.footer__icons:hover {
-	cursor: pointer;
-}
-
-/* Slut på Footer */
-
-
-/* Start på Media-queries */
-@media (max-width: 980px) {
-	.footer__follow {
-		margin-left: 3.5em;
-	}
-}
-
-@media (max-width: 722px) {
-	.footer__info {
-		padding-left: 0.1em;
-	}
-}
-
-@media (max-width: 631px) {
-	.footer__email {
-		margin-left: 5em;
-		padding-right: 0;
-	}
-
-	.footer__follow {
-		align-self: center;
-		margin-left: 0;
-	}
-}
-
-@media (max-width: 530px) and (min-width: 320px) {
-
-	hr {
-		width: 80%;
-	}
-
-	.footer__email {
-		margin-left: unset;
-		margin-right: 2em;
-	}
-
-	.footer__follow {
-		margin-right: 0.5em;
-	}
-
-	.footer__follow p {
-		margin-top: 1em;
-
-	}
-}
-
-/* Slut på Media-queries */

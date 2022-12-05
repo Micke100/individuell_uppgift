@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="mall.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 	<title>OnWebb</title>
 </head>
 
@@ -16,10 +18,10 @@
 		</h1>
 		<ul class="header__menu">
 			<a href="/startsida.html">
-				<li>Hem</li>
+				<li class="menu__item">Hem</li>
 			</a>
 			<a href="/seminarium.html">
-				<li>Seminarium</li>
+				<li class="menu__item">Seminarium</li>
 			</a>
 	</header>
 	<!-- Slut på Header -->
@@ -56,21 +58,21 @@
 			<!-- Slut på "välj dag formulär" -->
 
 			<!-- Start på kontakt formulär -->
-			<h2 class="cont__h2">Konktakt uppgifter</h2>
+			<h2 class="cont__h2">Kontakt uppgifter</h2>
 			<hr />
 			<section class="contact__cont">
 				<fieldset class="cont__name">
-					<label class="form__label" for="firstname">Ditt Förnamn*</label>
+					<label class="form__label" for="firstname">Ditt förnamn*</label>
 					<input class="form__input" id="firstname" type="text" placeholder="Förnamn" required>
 				</fieldset>
 				<fieldset class="cont__name">
-					<label class="form__label" for="lastname">Ditt Efternamn*</label>
+					<label class="form__label" for="lastname">Ditt efternamn*</label>
 					<input class="form__input" id="lastname" type="text" placeholder="Efternamn" required>
 				</fieldset>
 			</section>
 			<section>
 				<fieldset class="cont__name">
-					<label class="form__label" for="epost">Din E-postadress*</label>
+					<label class="form__label" for="epost">Din e-postadress*</label>
 					<input class="form__input" id="epost" type="email" placeholder="E-postadress" required>
 				</fieldset>
 			</section>
@@ -83,18 +85,18 @@
 			</section>
 			<section>
 				<fieldset class="cont__name">
-					<label class="form__label" for="adress">Din Adress*</label>
+					<label class="form__label" for="adress">Din adress*</label>
 					<input class="form__input" id="adress" type="text" placeholder="Adress" required>
 				</fieldset>
 			</section>
 
 			<section class="cont__contact">
 				<fieldset class="cont__name">
-					<label class="form__label" for="zipcode">Ditt Postnummer*</label>
+					<label class="form__label" for="zipcode">Ditt postnummer*</label>
 					<input class="form__input" id="zipcode" type="text" placeholder="Postnummer" required>
 				</fieldset>
 				<fieldset class="cont__name">
-					<label class="form__label" for="ort">Ange Ort*</label>
+					<label class="form__label" for="ort">Ange ort*</label>
 					<input class="form__input" id="ort" type="text" placeholder="Ort" required>
 				</fieldset>
 			</section>
@@ -128,10 +130,8 @@
 				<textarea name="message" id="message" cols="30" rows="10" placeholder="Meddelande"></textarea>
 			</section>
 			<!-- Slut på "beställ mat formulär" -->
-
-			<button class="button__pay">Betala</button>
+			<button type="submit" class="button__pay">Betala</button>
 		</form>
-
 	</main>
 
 	<!-- Start på Footer -->

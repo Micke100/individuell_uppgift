@@ -1,0 +1,151 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+
+:root {
+	--orange: #ff862f;
+	--grey-h2: #616161;
+	--white: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu__item {
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition-duration: 0.25s;
+	font-size: 0.8rem;
+	color: var(--white);
+	padding: 0 1em;
+}
+
+.menu__item:hover {
+	cursor: pointer;
+	color: var(--orange);
+	transition-duration: 0.25s;
+}
+
+/* Start på Footer */
+.footer__cont {
+	background-color: #292929;
+	height: fit-content;
+	color: var(--white);
+	display: flex;
+	margin-top: 5em;
+	padding: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer__pin {
+	margin-top: 0.5em;
+}
+
+.footer__info,
+.footer__follow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 2rem;
+}
+
+.footer__follow {
+	flex-direction: column;
+	justify-content: flex-start;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.footer__socials {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 1em;
+}
+
+.footer__icons {
+	border: 2px solid var(--orange);
+	padding: 0.2em;
+	margin: 0.2em;
+}
+
+.footer__icons:hover {
+	cursor: pointer;
+}
+
+/* Slut på footer */
+
+/* Start på Media-Queries */
+/* start på Mobile */
+@media (max-width: 414px) and (min-width: 320px) {
+	hr {
+		width: 80%;
+	}
+
+	.footer__cont {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__cont p {
+		font-size: 0.9em;
+	}
+
+	.footer__socials {
+		width: 5em;
+		justify-content: center;
+	}
+
+	.footer__email {
+		margin-left: unset;
+	}
+
+	.footer__follow p {
+		margin-top: 1em;
+
+	}
+}
+
+/* Slut på Mobile */
+
+@media (min-width: 445px) and (max-width: 545px) {
+	.footer__cont {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 546px) and (max-width: 754px) {
+	.footer__email {
+		margin-left: 5em;
+	}
+}
+
+@media (min-width: 547px) and (max-width: 608px) {
+	.footer__email {
+		margin-left: 3em;
+	}
+
+	.footer__follow {
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 755px) and (max-width: 1011px) {
+	.footer__follow {
+		margin-left: 4em;
+	}
+}
+
+/* Slut på Media-Queries */

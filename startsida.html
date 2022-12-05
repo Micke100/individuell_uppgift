@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="startsida.css">
+	<link rel="stylesheet" href="mall.css">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 	<title>OnWebb</title>
 </head>
@@ -17,21 +18,26 @@
 			<ul class="header__menu">
 				<li><span class="header__title--orange">O</span>n<span class="header__title--orange">W</span>ebb</li>
 				<div></div>
-				<a href="#top">
-					<li class="menu__item" tabindex="1">Hem</li>
-				</a>
-				<a href="#speakers">
-					<li class="menu__item" tabindex="3">Speakers</li>
-				</a>
-				<a href="#biljetter">
-					<li class="menu__item" tabindex="4">Biljetter</li>
-				</a>
-				<a href="seminarium.html">
-					<li class="menu__item" tabindex="5">Seminarium</li>
-				</a>
-				<a href="#contact">
-					<li class="menu__item" tabindex="6">Kontakt</li>
-				</a>
+				<div class="cont__menu__items">
+					<a href="#top">
+						<li class="menu__item" tabindex="1">Hem</li>
+					</a>
+					<a href="#speakers">
+						<li class="menu__item" tabindex="3">Speakers</li>
+					</a>
+					<a href="#biljetter">
+						<li class="menu__item" tabindex="4">Biljetter</li>
+					</a>
+				</div>
+				<div class="menu__items--small">
+					<a href="seminarium.html">
+						<li class="menu__item" tabindex="5">Seminarium</li>
+					</a>
+					<a href="#contact">
+						<li class="menu__item" tabindex="6">Kontakt</li>
+					</a>
+				</div>
+				</div>
 			</ul>
 		</nav>
 	</header>
@@ -56,7 +62,7 @@
 				<h2 id="speakers">Speakers</h2>
 			</div>
 			<div>
-				<img src="/bilder/pexels-pavel-danilyuk-8761515.jpg" alt="speaker1">
+				<img class="speakers_img" src="/bilder/pexels-pavel-danilyuk-8761515.jpg" alt="speaker1">
 			</div>
 			<div>
 				<h3>Louise Torborg</h3>
@@ -66,7 +72,7 @@
 					Louise kommer vara aktuell under fredagens föreläsningar.</p>
 			</div>
 			<div>
-				<img src="/bilder/pexels-mikhail-nilov-8872471.jpg" alt="speaker2">
+				<img class="speakers_img" src="/bilder/pexels-mikhail-nilov-8872471.jpg" alt="speaker2">
 			</div>
 			<div>
 				<h3>Ina Alfid</h3>
@@ -75,7 +81,7 @@
 					nu under lördagen vara med och föreläsa om specifika områden inom just Frontend.</p>
 			</div>
 			<div>
-				<img src="/bilder/pexels-henri-mathieusaintlaurent-8348462.jpg" alt="speaker3">
+				<img class="speakers_img" src="/bilder/pexels-henri-mathieusaintlaurent-8348462.jpg" alt="speaker3">
 			</div>
 			<div>
 				<h3>Karl Frej</h3>
@@ -85,7 +91,7 @@
 					kommer vara tillgänglig under alla 3 dagar.</p>
 			</div>
 			<div>
-				<img src="/bilder/pexels-rodnae-productions-7647987.jpg" alt="speaker4">
+				<img class="speakers_img" src="/bilder/pexels-rodnae-productions-7647987.jpg" alt="speaker4">
 			</div>
 			<div>
 				<h3>Abd al-Malik Hilal</h3>
@@ -125,11 +131,11 @@
 					</a>
 				</div>
 			</div>
-
 			<div class="card__cont">
 				<p class="card__price">400 kr</p>
 				<p class="card__day">Söndag 11/12</p>
-				<p class="card__info">Biljett till Söndagens seminarium, vill du beställa mat väljer du det i formuläret
+				<p class="card__info">Biljett till Söndagens seminarium, vill du beställa mat väljer du det i
+					formuläret
 					vid biljett köp.
 				</p>
 				<div class="cont__pay__button">
