@@ -81,6 +81,32 @@ fieldset {
 
 /* Slut på "välj dag formulär" */
 
+/* Start på välj mat formulär */
+.food__cont {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.form__textarea {
+	margin-top: 1em;
+}
+
+
+.form__input,
+#message {
+	outline-color: var(--orange);
+	padding: 0.7em;
+}
+
+#meat,
+#veg,
+#fish {
+	margin-top: 1em;
+}
+
+/* Slut på välj mat formulär */
+
 /* Start på kontakt formulär*/
 .cont__h2 {
 	text-align: center;
@@ -115,31 +141,9 @@ fieldset {
 	margin-right: 1em;
 }
 
-/* Start på välj mat formulär */
-.food__cont {
-	display: flex;
-	flex-direction: column;
-	padding: 1em;
-}
-
-.form__textarea {
-	margin-top: 1em;
-}
+/* Slut på Kontakt formulär */
 
 
-.form__input,
-#message {
-	outline-color: var(--orange);
-	padding: 0.7em;
-}
-
-#meat,
-#veg,
-#fish {
-	margin-top: 1em;
-}
-
-/* Slut på välj mat formulär */
 
 /* Start på betalknapp */
 .button__pay {
