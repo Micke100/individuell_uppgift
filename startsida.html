@@ -227,19 +227,21 @@
 			<form class="form__cont" action="#">
 				<h2 id="contact">Kontakt</h2>
 				<div>
-					<label for="name">Ditt namn</label>
-					<input class="form__input" id="name" type="text" placeholder="Namn" required>
+					<label for="name">Ditt namn<span class="form__label--orange">*</span></label>
+					<input pattern="[A-Za-z]{2,}" class="form__input" id="name" type="text" placeholder="Namn" required>
 				</div>
 				<div>
-					<label for="email">Din email</label>
-					<input class="form__input" id="email" type="email" placeholder="Email" required>
+					<label for="email">Din e-mail<span class="form__label--orange">*</span></label>
+					<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form__input" id="email" type="email"
+						placeholder="E-mail" required>
 				</div>
 				<div>
-					<label class="for" for="subject">Ämne</label>
-					<input class="form__input" id="subject" type="text" placeholder="Ämne" required>
+					<label class="for" for="subject">Ämne<span class="form__label--orange">*</span></label>
+					<input pattern="[A-Za-z]{3,10}" class="form__input" id="subject" type="text" placeholder="Ämne"
+						required>
 				</div>
 				<div>
-					<label for="message">Meddelande</label>
+					<label for="message">Meddelande<span class="form__label--orange">*</span></label>
 					<textarea name="message" id="message" cols="40" rows="10" placeholder="Meddelande"
 						required></textarea>
 				</div>

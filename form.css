@@ -116,10 +116,6 @@ fieldset {
 	margin-top: 2em;
 }
 
-.form__label--orange {
-	color: var(--orange);
-}
-
 .form__cont section {
 	display: flex;
 }

@@ -93,27 +93,29 @@
 				<fieldset class="cont__name">
 					<label class="form__label" for="firstname">Ditt förnamn<span
 							class="form__label--orange">*</span></label>
-					<input class="form__input" id="firstname" type="text" placeholder="Förnamn" required />
+					<input pattern="[A-Za-z]{2,}" class="form__input" id="firstname" type="text" placeholder="Förnamn"
+						required />
 				</fieldset>
 				<fieldset class="cont__name">
 					<label class="form__label" for="lastname">Ditt efternamn<span
 							class="form__label--orange">*</span></label>
-					<input class="form__input" id="lastname" type="text" placeholder="Efternamn" required />
+					<input pattern="[A-Za-z]{2,}" class="form__input" id="lastname" type="text" placeholder="Efternamn"
+						required />
 				</fieldset>
 			</section>
 			<section>
 				<fieldset class="cont__name">
-					<label class="form__label" for="epost">Din e-postadress<span
-							class="form__label--orange">*</span></label>
-					<input class="form__input" id="epost" type="email" placeholder="E-postadress" required />
+					<label class="form__label" for="epost">Din e-mail<span class="form__label--orange">*</span></label>
+					<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form__input" id="epost" type="email"
+						placeholder="E-mail" required />
 				</fieldset>
 			</section>
 			<section>
 				<fieldset class="cont__name">
 					<label class="form__label" for="number">Mobilnummer<span
 							class="form__label--orange">*</span></label>
-					<input class="form__input" id="number" type="text" min="8" max="12" placeholder="xxx-xx xx xxx"
-						required />
+					<input pattern="[0-9]{3}-[0-9]{3,10}" class="form__input" id="number" type="tel" min="8" max="12"
+						placeholder="xxx-xxxxxxx" required />
 				</fieldset>
 			</section>
 			<section>
@@ -127,7 +129,8 @@
 				<fieldset class="cont__name">
 					<label class="form__label" for="zipcode">Ditt postnummer<span
 							class="form__label--orange">*</span></label>
-					<input class="form__input" id="zipcode" type="text" placeholder="Postnummer" required />
+					<input pattern="[0-9]{3,7}" class="form__input" id="zipcode" type="tel" placeholder="Postnummer"
+						required />
 				</fieldset>
 				<fieldset class="cont__name">
 					<label class="form__label" for="ort">Ange ort<span class="form__label--orange">*</span></label>

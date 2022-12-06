@@ -303,6 +303,21 @@ textarea {
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
 
+input:focus {
+	outline-color: black;
+}
+
+input:valid {
+	outline-color: greenyellow;
+}
+
+input:invalid {
+	outline-color: red;
+}
+
+
+
+
 /* Slut på kontakta oss sektion */
 
 @media (max-width: 414px) and (min-width: 320px) {
