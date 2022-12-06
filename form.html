@@ -57,51 +57,6 @@
 			</section>
 			<!-- Slut på "välj dag formulär" -->
 
-			<!-- Start på kontakt formulär -->
-			<h2 class="cont__h2">Kontakt uppgifter</h2>
-			<hr />
-			<section class="contact__cont">
-				<fieldset class="cont__name">
-					<label class="form__label" for="firstname">Ditt förnamn*</label>
-					<input class="form__input" id="firstname" type="text" placeholder="Förnamn" required>
-				</fieldset>
-				<fieldset class="cont__name">
-					<label class="form__label" for="lastname">Ditt efternamn*</label>
-					<input class="form__input" id="lastname" type="text" placeholder="Efternamn" required>
-				</fieldset>
-			</section>
-			<section>
-				<fieldset class="cont__name">
-					<label class="form__label" for="epost">Din e-postadress*</label>
-					<input class="form__input" id="epost" type="email" placeholder="E-postadress" required>
-				</fieldset>
-			</section>
-			<section>
-				<fieldset class="cont__name">
-					<label class="form__label" for="number">Mobilnummer*</label>
-					<input class="form__input" id="number" type="text" min="8" max="12" placeholder="xxx-xx xx xxx"
-						required>
-				</fieldset>
-			</section>
-			<section>
-				<fieldset class="cont__name">
-					<label class="form__label" for="adress">Din adress*</label>
-					<input class="form__input" id="adress" type="text" placeholder="Adress" required>
-				</fieldset>
-			</section>
-
-			<section class="cont__contact">
-				<fieldset class="cont__name">
-					<label class="form__label" for="zipcode">Ditt postnummer*</label>
-					<input class="form__input" id="zipcode" type="text" placeholder="Postnummer" required>
-				</fieldset>
-				<fieldset class="cont__name">
-					<label class="form__label" for="ort">Ange ort*</label>
-					<input class="form__input" id="ort" type="text" placeholder="Ort" required>
-				</fieldset>
-			</section>
-			<!-- Slut på kontakt formulär -->
-
 			<!-- Start på "beställ mat formulär" -->
 			<h2 class="cont__h2">Beställ mat</h2>
 			<hr />
@@ -130,35 +85,99 @@
 				<textarea name="message" id="message" cols="30" rows="10" placeholder="Meddelande"></textarea>
 			</section>
 			<!-- Slut på "beställ mat formulär" -->
+
+			<!-- Start på kontakt formulär -->
+			<h2 class="cont__h2">Kontakt uppgifter</h2>
+			<hr />
+			<section class="contact__cont">
+				<fieldset class="cont__name">
+					<label class="form__label" for="firstname">Ditt förnamn<span
+							class="form__label--orange">*</span></label>
+					<input class="form__input" id="firstname" type="text" placeholder="Förnamn" required />
+				</fieldset>
+				<fieldset class="cont__name">
+					<label class="form__label" for="lastname">Ditt efternamn<span
+							class="form__label--orange">*</span></label>
+					<input class="form__input" id="lastname" type="text" placeholder="Efternamn" required />
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="form__label" for="epost">Din e-postadress<span
+							class="form__label--orange">*</span></label>
+					<input class="form__input" id="epost" type="email" placeholder="E-postadress" required />
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="form__label" for="number">Mobilnummer<span
+							class="form__label--orange">*</span></label>
+					<input class="form__input" id="number" type="text" min="8" max="12" placeholder="xxx-xx xx xxx"
+						required />
+				</fieldset>
+			</section>
+			<section>
+				<fieldset class="cont__name">
+					<label class="form__label" for="adress">Din adress<span class="form__label--orange">*</span></label>
+					<input class="form__input" id="adress" type="text" placeholder="Adress" required />
+				</fieldset>
+			</section>
+
+			<section class="cont__contact">
+				<fieldset class="cont__name">
+					<label class="form__label" for="zipcode">Ditt postnummer<span
+							class="form__label--orange">*</span></label>
+					<input class="form__input" id="zipcode" type="text" placeholder="Postnummer" required />
+				</fieldset>
+				<fieldset class="cont__name">
+					<label class="form__label" for="ort">Ange ort<span class="form__label--orange">*</span></label>
+					<input class="form__input" id="ort" type="text" placeholder="Ort" required />
+				</fieldset>
+			</section>
+			<!-- Slut på kontakt formulär -->
+
+
 			<button type="submit" class="button__pay">Betala</button>
-		</form>
 	</main>
 
 	<!-- Start på Footer -->
 	<footer class="footer__cont">
 		<section class="footer__info  footer__pin">
-			<img class="footer__icons" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+			<a target="_blank"
+				href="https://www.google.se/maps/place/Karlstad+CCC/@59.3834798,13.5068327,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3d7f3914f0d:0xfea53dd69ed47d66!8m2!3d59.3834771!4d13.5094076">
+				<img class="footer__icons" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+			</a>
 			<p>Tage Erlandergatan, Karlstad CCC</p>
 			<p>Karlstad, Sverige</p>
 		</section>
 
 		<section class="footer__info">
-			<img class="footer__icons" src="/bilder/ph_phone-call-fill.png" alt="phone">
+			<img tabindex="0" class="footer__icons" src="/bilder/ph_phone-call-fill.png" alt="phone">
 			<p>+46 70 36 83 573</p>
 		</section>
 
 		<section class="footer__info footer__email">
-			<img class="footer__icons" src="/bilder/clarity_email-line.png" alt="email">
+			<a href="mailto:onwebb@outlook.com">
+				<img class="footer__icons" src="/bilder/clarity_email-line.png" alt="email">
+			</a>
 			<p>onwebb@outlook.com</p>
 		</section>
 
 		<section class="footer__follow">
 			<p>Följ Oss</p>
 			<div class="footer__socials">
-				<img class="footer__icons" src="/bilder/gg_facebook.png" alt="facebook">
-				<img class="footer__icons" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
-				<img class="footer__icons" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
-				<img class="footer__icons" src="/bilder/ps_youtube.png" alt="youtube">
+				<a target="_blank" href="https://www.facebook.com/">
+					<img class="footer__icons" src="/bilder/gg_facebook.png" alt="facebook">
+				</a>
+				<a target="_blank" href="https://twitter.com/?lang=sv">
+					<img class="footer__icons" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+				</a>
+				<a target="_blank" href="https://www.instagram.com/">
+					<img class="footer__icons" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+				</a>
+				<a target="_blank" href="https://www.youtube.com/">
+					<img class="footer__icons" src="/bilder/ps_youtube.png" alt="youtube">
+				</a>
 			</div>
 		</section>
 	</footer>

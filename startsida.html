@@ -20,21 +20,21 @@
 				<div></div>
 				<div class="cont__menu__items">
 					<a href="#top">
-						<li class="menu__item" tabindex="1">Hem</li>
+						<li class="menu__item">Hem</li>
 					</a>
 					<a href="#speakers">
-						<li class="menu__item" tabindex="3">Speakers</li>
+						<li class="menu__item">Speakers</li>
 					</a>
 					<a href="#biljetter">
-						<li class="menu__item" tabindex="4">Biljetter</li>
+						<li class="menu__item">Biljetter</li>
 					</a>
 				</div>
 				<div class="menu__items--small">
 					<a href="seminarium.html">
-						<li class="menu__item" tabindex="5">Seminarium</li>
+						<li class="menu__item">Seminarium</li>
 					</a>
 					<a href="#contact">
-						<li class="menu__item" tabindex="6">Kontakt</li>
+						<li class="menu__item">Kontakt</li>
 					</a>
 				</div>
 				</div>
@@ -51,54 +51,116 @@
 				vi
 				utlovar ett mycket trevligt sällskap, hoppas vi ses!
 			</p>
-			<a href="form.html">
+			<a tabindex="-1" href="form.html">
 				<button class="main__button">Köp Biljetter</button>
 			</a>
 		</section>
 
 		<!-- Speaker content -->
-		<section class="speakers__cont">
-			<div>
-				<h2 id="speakers">Speakers</h2>
+		<h2 id="speakers">Speakers</h2>
+		<section class="speaker__cont">
+			<div class="speaker__img">
+				<img src="/bilder/pexels-pavel-danilyuk-8761515.jpg" alt="speaker-woman">
 			</div>
-			<div>
-				<img class="speakers_img" src="/bilder/pexels-pavel-danilyuk-8761515.jpg" alt="speaker1">
-			</div>
-			<div>
+
+			<div class="speaker__info">
 				<h3>Louise Torborg</h3>
 				<p>UX/UI Designer</p>
 				<p>Louise har många års erfarenhet av UX/UI design och arbetat för flera stora företag inom området och
 					har nu börjat föreläsa om design.
 					Louise kommer vara aktuell under fredagens föreläsningar.</p>
+				<div class="speaker__socials">
+					<a target="_blank" href="https://www.facebook.com/">
+						<img class="social__icon" src="/bilder/gg_facebook.png" alt="facebook">
+					</a>
+					<a target="_blank" href="https://twitter.com/?lang=sv">
+						<img class="social__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					</a>
+					<a target="_blank" href="https://www.instagram.com/">
+						<img class="social__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					</a>
+					<a target="_blank" href="https://www.youtube.com/">
+						<img class="social__icon" src="/bilder/ps_youtube.png" alt="youtube">
+					</a>
+				</div>
 			</div>
-			<div>
-				<img class="speakers_img" src="/bilder/pexels-mikhail-nilov-8872471.jpg" alt="speaker2">
-			</div>
-			<div>
+		</section>
+		<section class="speaker__cont">
+			<div class="speaker__info">
 				<h3>Ina Alfid</h3>
 				<p>Frontend Utvecklare</p>
 				<p>Ina jobbar som Frontend utvecklare samt varit lärare på folkuniversitet i Karlstad i många och kommer
 					nu under lördagen vara med och föreläsa om specifika områden inom just Frontend.</p>
+				<div class="speaker__socials">
+					<a target="_blank" href="https://www.facebook.com/">
+						<img class="social__icon" src="/bilder/gg_facebook.png" alt="facebook">
+					</a>
+					<a target="_blank" href="https://twitter.com/?lang=sv">
+						<img class="social__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					</a>
+					<a target="_blank" href="https://www.instagram.com/">
+						<img class="social__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					</a>
+					<a target="_blank" href="https://www.youtube.com/">
+						<img class="social__icon" src="/bilder/ps_youtube.png" alt="youtube">
+					</a>
+				</div>
 			</div>
-			<div>
-				<img class="speakers_img" src="/bilder/pexels-henri-mathieusaintlaurent-8348462.jpg" alt="speaker3">
+			<div class="speaker__img">
+				<img src="/bilder/pexels-mikhail-nilov-8872471.jpg" alt="speaker-woman">
 			</div>
-			<div>
+		</section>
+		<section class="speaker__cont">
+			<div class="speaker__img">
+				<img src="/bilder/pexels-henri-mathieusaintlaurent-8348462.jpg" alt="speaker-man">
+			</div>
+
+			<div class="speaker__info">
 				<h3>Karl Frej</h3>
 				<p>Frontend Utvecklare</p>
 				<p>Karl är lärare på webbutvecklar programmet i Göteborg och fokuserar sitt lärande och arbete på
 					Frontend tekniker och har mycket kunskap om de flesta programmeringsspråk som används 2022. Karl
 					kommer vara tillgänglig under alla 3 dagar.</p>
+				<div class="speaker__socials">
+					<a target="_blank" href="https://www.facebook.com/">
+						<img class="social__icon" src="/bilder/gg_facebook.png" alt="facebook">
+					</a>
+					<a target="_blank" href="https://twitter.com/?lang=sv">
+						<img class="social__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					</a>
+					<a target="_blank" href="https://www.instagram.com/">
+						<img class="social__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					</a>
+					<a target="_blank" href="https://www.youtube.com/">
+						<img class="social__icon" src="/bilder/ps_youtube.png" alt="youtube">
+					</a>
+				</div>
 			</div>
-			<div>
-				<img class="speakers_img" src="/bilder/pexels-rodnae-productions-7647987.jpg" alt="speaker4">
-			</div>
-			<div>
+		</section>
+		<section class="speaker__cont">
+			<div class="speaker__info">
 				<h3>Abd al-Malik Hilal</h3>
 				<p>Backend Utvecklare</p>
 				<p>Abd fokuserar mestadels på backend utveckling men har också arbetat inom frontend. Abd kommer finnas
 					hos oss på seminariumet under söndagen för att prata om hur det är att jobba som backend och vilka
 					tekniker som oftast används.</p>
+				<div class="speaker__socials">
+					<a target="_blank" href="https://www.facebook.com/">
+						<img class="social__icon" src="/bilder/gg_facebook.png" alt="facebook">
+					</a>
+					<a target="_blank" href="https://twitter.com/?lang=sv">
+						<img class="social__icon" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					</a>
+					<a target="_blank" href="https://www.instagram.com/">
+						<img class="social__icon" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					</a>
+					<a target="_blank" href="https://www.youtube.com/">
+						<img class="social__icon" src="/bilder/ps_youtube.png" alt="youtube">
+					</a>
+				</div>
+			</div>
+			<div class="speaker__img">
+				<img src="/bilder/pexels-rodnae-productions-7647987.jpg" alt="speaker-man">
 			</div>
 		</section>
 
@@ -113,7 +175,7 @@
 					biljett köp.
 				</p>
 				<div class="cont__pay__button">
-					<a href="form.html">
+					<a tabindex="-1" href="form.html">
 						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
@@ -126,11 +188,12 @@
 					vid biljett köp.
 				</p>
 				<div class="cont__pay__button">
-					<a href="form.html">
+					<a tabindex="-1" href="form.html">
 						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
 			</div>
+
 			<div class="card__cont">
 				<p class="card__price">400 kr</p>
 				<p class="card__day">Söndag 11/12</p>
@@ -139,7 +202,7 @@
 					vid biljett köp.
 				</p>
 				<div class="cont__pay__button">
-					<a href="form.html">
+					<a tabindex="-1" href="form.html">
 						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
@@ -152,12 +215,11 @@
 					formuläret vid biljett
 					köp.</p>
 				<div class="cont__pay__button">
-					<a href="form.html">
+					<a tabindex="-1" href="form.html">
 						<button class="card__button">Köp Biljett</button>
 					</a>
 				</div>
 			</div>
-
 		</section>
 
 		<!-- Start på kontakta oss formulär -->
@@ -181,7 +243,7 @@
 					<textarea name="message" id="message" cols="40" rows="10" placeholder="Meddelande"
 						required></textarea>
 				</div>
-				<button class="form__button" type="button">Skicka meddelande</button>
+				<button class="form__button" type="submit">Skicka meddelande</button>
 			</form>
 		</section>
 		<!-- Slut på Kontakta oss formulär -->
@@ -189,28 +251,41 @@
 		<!-- Start på Footer -->
 		<footer class="footer__cont">
 			<section class="footer__info  footer__pin">
-				<img class="footer__icons" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+				<a target="_blank"
+					href="https://www.google.se/maps/place/Karlstad+CCC/@59.3834798,13.5068327,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3d7f3914f0d:0xfea53dd69ed47d66!8m2!3d59.3834771!4d13.5094076">
+					<img class="footer__icons" src="/bilder/ic_baseline-pin-drop.png" alt="location-pin">
+				</a>
 				<p>Tage Erlandergatan, Karlstad CCC</p>
 				<p>Karlstad, Sverige</p>
 			</section>
 
 			<section class="footer__info">
-				<img class="footer__icons" src="/bilder/ph_phone-call-fill.png" alt="phone">
+				<img tabindex="0" class="footer__icons" src="/bilder/ph_phone-call-fill.png" alt="phone">
 				<p>+46 70 36 83 573</p>
 			</section>
 
 			<section class="footer__info footer__email">
-				<img class="footer__icons" src="/bilder/clarity_email-line.png" alt="email">
+				<a href="mailto:onwebb@outlook.com">
+					<img class="footer__icons" src="/bilder/clarity_email-line.png" alt="email">
+				</a>
 				<p>onwebb@outlook.com</p>
 			</section>
 
 			<section class="footer__follow">
 				<p>Följ Oss</p>
 				<div class="footer__socials">
-					<img class="footer__icons" src="/bilder/gg_facebook.png" alt="facebook">
-					<img class="footer__icons" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
-					<img class="footer__icons" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
-					<img class="footer__icons" src="/bilder/ps_youtube.png" alt="youtube">
+					<a target="_blank" href="https://www.facebook.com/">
+						<img class="footer__icons" src="/bilder/gg_facebook.png" alt="facebook">
+					</a>
+					<a target="_blank" href="https://twitter.com/?lang=sv">
+						<img class="footer__icons" src="/bilder/akar-icons_twitter-fill.png" alt="twitter">
+					</a>
+					<a target="_blank" href="https://www.instagram.com/">
+						<img class="footer__icons" src="/bilder/radix-icons_instagram-logo.png" alt="instagram">
+					</a>
+					<a target="_blank" href="https://www.youtube.com/">
+						<img class="footer__icons" src="/bilder/ps_youtube.png" alt="youtube">
+					</a>
 				</div>
 			</section>
 		</footer>

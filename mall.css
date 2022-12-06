@@ -93,6 +93,11 @@ a {
 		width: 80%;
 	}
 
+	.footer__info,
+	.footer__email {
+		padding-top: 1em;
+	}
+
 	.footer__cont {
 		flex-direction: column;
 		align-items: center;
@@ -123,6 +128,11 @@ a {
 	.footer__cont {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.footer__info,
+	.footer__email {
+		padding-top: 1em;
 	}
 }
 
