@@ -25,7 +25,7 @@
 	color: var(--orange);
 }
 
-div {
+.header__grow {
 	flex-grow: 1;
 }
 
@@ -239,7 +239,7 @@ div {
 	grid-column: 2;
 	grid-row: 2;
 	justify-self: start;
-	margin-left: 0.2em;
+	margin-left: 1em;
 	display: flex;
 	flex-direction: column;
 }
@@ -353,16 +353,28 @@ input:invalid {
 	}
 }
 
+.card__saturday {
+	margin-left: 6em;
+}
+
+.card__sunday {
+	margin-right: 6em;
+}
+
+.test {
+	display: flex;
+}
+
 /* Start på Media-Queries för Headern */
 @media (max-width: 800px) {
 	.menu__items--small {
 		display: flex;
 		margin-top: 0.3em;
+		margin-bottom: 1em;
 	}
 
 	.header__menu>li:first-of-type {
 		margin-left: unset;
-		margin-bottom: 0.2em;
 	}
 
 	.header__cont {
@@ -396,7 +408,7 @@ input:invalid {
 }
 
 /* Start på Media-Queries för Speakers sektionen */
-@media (max-width: 1137px) {
+@media (max-width: 1136px) {
 	.speaker__cont {
 		margin: 0 1.5em;
 	}
@@ -407,10 +419,17 @@ input:invalid {
 		justify-content: center;
 	}
 
+	.speaker__info,
+	.speaker__img {
+		max-width: unset;
+	}
+
 	.speaker__cont:nth-of-type(3),
 	.speaker__cont:nth-of-type(5) {
 		flex-wrap: wrap-reverse;
+
 	}
 }
+
 
 /* Slut på Media-Queries för Speakers sektionen */
