@@ -34,6 +34,15 @@ a {
 	color: var(--orange);
 }
 
+input:valid {
+	outline-color: greenyellow;
+}
+
+input:invalid {
+	outline-color: red;
+}
+
+
 .menu__item:hover {
 	cursor: pointer;
 	color: var(--orange);

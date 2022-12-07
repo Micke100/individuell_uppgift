@@ -228,21 +228,24 @@
 				<h2 id="contact">Kontakt</h2>
 				<div>
 					<label for="name">Ditt namn<span class="form__label--orange">*</span></label>
-					<input pattern="[A-Za-z]{2,}" class="form__input" id="name" type="text" placeholder="Namn" required>
+					<input pattern="{2,}" class="form__input" id="name" type="text" placeholder="Namn" required>
+					<p class="example__name">t. ex. Rubeus Hagrid</p>
 				</div>
 				<div>
 					<label for="email">Din e-mail<span class="form__label--orange">*</span></label>
 					<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form__input" id="email" type="email"
 						placeholder="E-mail" required>
+					<p class="example__email">t. ex. exempel@gmail.com</p>
 				</div>
 				<div>
 					<label class="for" for="subject">Ämne<span class="form__label--orange">*</span></label>
 					<input pattern="[A-Za-z]{3,10}" class="form__input" id="subject" type="text" placeholder="Ämne"
 						required>
+					<p class="example__subject">t. ex. Seminarium</p>
 				</div>
 				<div>
 					<label for="message">Meddelande<span class="form__label--orange">*</span></label>
-					<textarea name="message" id="message" cols="40" rows="10" placeholder="Meddelande"
+					<textarea min="5" max="200" name="message" id="message" cols="40" rows="10" placeholder="Meddelande"
 						required></textarea>
 				</div>
 				<button class="form__button" type="submit">Skicka meddelande</button>

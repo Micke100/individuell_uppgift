@@ -79,6 +79,15 @@ fieldset {
 	margin: 0.5em;
 }
 
+#all-days:checked+.days__cont {
+	opacity: 0.4;
+	color: grey;
+}
+
+#all-days {
+	margin: 0.5em 0;
+}
+
 /* Slut på "välj dag formulär" */
 
 /* Start på välj mat formulär */
@@ -92,11 +101,18 @@ fieldset {
 	margin-top: 1em;
 }
 
-
 .form__input,
 #message {
-	outline-color: var(--orange);
 	padding: 0.7em;
+}
+
+#food:checked+.food__cont {
+	opacity: 0.4;
+	color: grey;
+}
+
+#food {
+	margin: 0.5em 0;
 }
 
 #meat,
@@ -124,6 +140,29 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	margin-top: 1em;
+}
+
+.example__first,
+.example__last,
+.example__email,
+.example__number,
+.example__adress,
+.example__zipcode,
+.example__ort {
+	visibility: hidden;
+	font-size: 0.9em;
+	margin-bottom: 0;
+}
+
+#firstname:invalid+.example__first,
+#lastname:invalid+.example__last,
+#epost:invalid+.example__email,
+#number:invalid+.example__number,
+#adress:invalid+.example__adress,
+#zipcode:invalid+.example__zipcode,
+#ort:invalid+.example__ort {
+	visibility: visible;
+	margin-bottom: 0;
 }
 
 #epost,

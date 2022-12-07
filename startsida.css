@@ -272,13 +272,34 @@ div {
 .form__input {
 	padding: 0.3em;
 	width: 11.3em;
+}
+
+.example__name,
+.example__email,
+.example__subject {
+	visibility: hidden;
+	font-size: 0.9em;
+	margin-bottom: 0;
+}
+
+#name:invalid+.example__name,
+#email:invalid+.example__email,
+#subject:invalid+.example__subject {
+	visibility: visible;
 	margin-bottom: 1em;
-	outline-color: var(--orange);
+
 }
 
 textarea {
 	padding: 0.3em;
-	outline-color: var(--orange);
+}
+
+input:valid {
+	outline-color: greenyellow;
+}
+
+input:invalid {
+	outline-color: red;
 }
 
 .form__button {
@@ -302,20 +323,6 @@ textarea {
 	transition: 0.5s;
 	box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
-
-input:focus {
-	outline-color: black;
-}
-
-input:valid {
-	outline-color: greenyellow;
-}
-
-input:invalid {
-	outline-color: red;
-}
-
-
 
 
 /* Slut på kontakta oss sektion */
