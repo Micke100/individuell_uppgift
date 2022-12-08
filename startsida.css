@@ -147,7 +147,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 3em;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 0 1rem;
 }
 
@@ -157,6 +157,12 @@
 	max-width: 12rem;
 	margin: 1rem;
 
+}
+
+.tickets__section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .card__price {
@@ -383,6 +389,7 @@ input:invalid {
 
 	.header__menu {
 		flex-direction: column;
+
 	}
 
 	.cont__menu__items {

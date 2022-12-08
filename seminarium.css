@@ -64,6 +64,12 @@ hr {
 	flex-wrap: wrap;
 }
 
+.card__section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .card__cont {
 	width: 15em;
 	background-color: var(--orange);
